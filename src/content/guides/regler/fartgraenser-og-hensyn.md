@@ -36,6 +36,17 @@ Aalborg Havns ordensreglement (godkendt af Trafikstyrelsen i 2021) sætter helt 
 
 Og modsat hvad man kunne tro, findes der **ikke** udpegede områder ved Aalborg, hvor man må sejle hurtigere tæt på kysten end ellers — tværtimod kræver vandski, kapsejlads og vandscootersejlads inden for havnens område havnemyndighedens forudgående tilladelse.
 
+Havnens område er større, end mange tror. Det dækker havnefronten fra Norden Bro i vest, forbi broerne og gennem hele byen til Portland-området i øst, plus Nørresundby Havn og de Nordlige og Østlige Erhvervshavne ude ved tunnelen og Hals-siden:
+
+![Skitse over Aalborg Havns fartzoner — 6 knob-området dækker havnefronten, Nørresundby Havn samt Nordlige og Østlige Erhvervshavn](../../../assets/diagrammer/aalborg-havn-fartzoner.svg)
+
+Sat sammen ser fart-lagene ved Aalborg sådan ud:
+
+1. **Ude i fjorden og i renden** (uden for havneområdet og brozonerne): ingen fast knob-grænse — du må gerne plane, når forholdene tillader det.
+2. **Inden for havnens område** (se skitsen): højst **6 knob** — i bassinerne højst **3 knob**.
+3. **Ved broerne:** kun manøvrefart, og følg brovagtens anvisninger.
+4. **Altid og overalt:** søvejsreglernes krav om sikker fart — og dit kølvand er dit ansvar.
+
 ## Sejlrenden ved Aalborg: hold dig fri af erhvervstrafikken
 
 I den smalle fjord ved Aalborg fylder den afmærkede rende en stor del af farvandet, og her gælder søvejsreglernes regel 9 om snævre løb: hold dig så tæt, som det er sikkert, på rendens **styrbords side**, og — vigtigst for dig som fritidssejler — **både under 20 meter må ikke vanskeliggøre passagen for skibe, der kun kan sejle sikkert i selve renden**. Et lastskib i renden stikker for dybt til at sejle andre steder, har en stoppelængde på flere hundrede meter og kan hverken dreje udenom eller bakke op — det er dig, der skal holde dig fri, og du må heller ikke krydse renden, hvis det generer et skib, der er bundet til den. Kig jævnligt bagud: erhvervsskibene gør 10-12 knob og indhenter dig hurtigere, end man tror.
@@ -57,7 +68,7 @@ Overtrædelse af fartbegrænsninger og sejladsregler kan udløse bøde, og polit
 - [Bekendtgørelse om sejlads m.m. i visse danske farvande, BEK nr. 1316 af 21/11/2023 — Retsinformation](https://www.retsinformation.dk/eli/lta/2023/1316/pdf)
 - [Vandscooterbekendtgørelsen, BEK nr. 809 af 09/08/2019 — Retsinformation](https://www.retsinformation.dk/eli/lta/2019/809)
 - [Styrelsen for Grøn Arealomlægning og Vandmiljø — Regler for færdsel på havet](https://sgavmst.dk/natur-og-jagt/regler-for-faerdsel-i-naturen/hvor-maa-jeg-faerdes/paa-havet)
-- [Ordensreglement for Aalborg Havn (PDF) — Port of Aalborg](https://portofaalborg.dk/wp-content/uploads/2023/03/ordensreglement-for-aalborg-havn.pdf)
+- [Ordensreglement for Aalborg Havn (PDF — bilag 1-4 har officielle kort og koordinater for havnens område) — Port of Aalborg](https://portofaalborg.dk/wp-content/uploads/2023/03/ordensreglement-for-aalborg-havn.pdf)
 - [Bekendtgørelse om søvejsregler, BEK nr. 1083 af 20/11/2009 (regel 6 og 9) — Retsinformation](https://www.retsinformation.dk/eli/lta/2009/1083)
 - [Bekendtgørelse om sejlads på Limfjorden mellem Egholm og Kattegat, BEK nr. 953 af 18/12/1991 — Retsinformation](https://www.retsinformation.dk/eli/lta/1991/953)
 - [Den Danske Havnelods — aktuelle broreglementer og havneoplysninger](https://www.danskehavnelods.dk/)
