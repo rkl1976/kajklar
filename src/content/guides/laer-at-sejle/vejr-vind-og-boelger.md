@@ -14,7 +14,7 @@ Danske vejrudsigter angiver vindstyrke i meter i sekundet (m/s). Som ny motorbå
 
 | Vindstyrke | Forhold for lille motorbåd |
 |---|---|
-| 0–5 m/s | Fint — god øvelsesvejr |
+| 0–5 m/s | Fint — godt øvelsesvejr |
 | 5–8 m/s | Kræver erfaring, især i åbent vand |
 | Over 8 m/s | Bliv i havn, eller hold dig til beskyttede farvande |
 

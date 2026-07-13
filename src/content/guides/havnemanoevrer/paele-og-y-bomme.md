@@ -34,7 +34,7 @@ Når alle trosser er på plads, ligger båden fast mellem pælene og kajen — a
 
 ## Y-bomme: fendere og forsigtighed
 
-Ved Y-bomme gælder næsten de samme principper som ved almindelig anløb, blot med en flydende bom som ekstra element:
+Ved Y-bomme gælder næsten de samme principper som ved et almindeligt anløb, blot med en flydende bom som ekstra element:
 
 ![Diagram: anløb i bås med Y-bomme — sigt midt mellem bommene, kryb ind i tomgangsfart med fendere klar i begge sider](../../../assets/diagrammer/y-bom-anloeb.svg)
 

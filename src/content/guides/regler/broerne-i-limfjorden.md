@@ -10,7 +10,7 @@ Limfjorden er krydset af en række broer, og som motorbådssejler kommer du før
 
 ## Broerne fra vest mod øst
 
-**Oddesundbroen** (mellem Thyholm og Venø-området, ved indsejlingen til Nissum Bredning) har en gennemsejlingshøjde på cirka 5 meter, når klappen er lukket. Broen åbner for fritidssejlere hvert halve time, i minuttal xx.15 og xx.45, i tidsrummet cirka kl. 06.00–17.30. Kontakt broen via VHF eller telefon — tjek broens egen hjemmeside for de aktuelt gældende kontaktoplysninger, da disse kan ændre sig.
+**Oddesundbroen** (mellem Thyholm og Venø-området, ved indsejlingen til Nissum Bredning) har en gennemsejlingshøjde på cirka 5 meter, når klappen er lukket. Broen åbner for fritidssejlere hver halve time, i minuttal xx.15 og xx.45, i tidsrummet cirka kl. 06.00–17.30. Kontakt broen via VHF eller telefon — tjek broens egen hjemmeside for de aktuelt gældende kontaktoplysninger, da disse kan ændre sig.
 
 **Vilsundbroen** (syd for Thisted, mellem Thy og Mors) har en gennemsejlingshøjde på cirka 3,75 meter, når broen er lukket. Skal du højere igennem, kræver det broåbning — kontakt brovagten eller tjek opslag ved broen for aktuelle åbningstider, da disse ikke er entydigt offentliggjort samme sted som ved de øvrige broer.
 

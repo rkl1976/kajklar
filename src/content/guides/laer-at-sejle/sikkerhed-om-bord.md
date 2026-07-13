@@ -45,7 +45,7 @@ Selv en øvet svømmer kan miste evnen til at holde sig oven vande efter kort ti
 
 ## Kommunikation
 
-Hav altid mobilen i en vandtæt pose eller etui, opladet og med god dækning i tankerne, når du planlægger ruten. Har du en VHF-radio, så husk **kanal 16**, som er den internationale nød- og kaldekanal. Kend også **112-appen**, som automatisk sender din position videre til alarmcentralen, hvis du ringer nødopkald fra en mobil med dårlig stedkendskab til, hvor du præcis befinder dig på vandet.
+Hav altid mobilen i en vandtæt pose eller etui, opladet og med god dækning i tankerne, når du planlægger ruten. Har du en VHF-radio, så husk **kanal 16**, som er den internationale nød- og kaldekanal. Kend også **112-appen**, som automatisk sender din position videre til alarmcentralen, når du ringer op — en stor fordel, når du er på vandet og ikke selv kan beskrive præcis, hvor du befinder dig.
 
 ## Alkohol og sejlads
 

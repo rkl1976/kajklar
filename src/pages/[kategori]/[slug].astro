@@ -36,7 +36,7 @@ const naeste = index < soeskende.length - 1 ? soeskende[index + 1] : undefined;
     <h1>{guide.data.title}</h1>
     <Content />
   </article>
-  <nav class="mt-10 flex justify-between gap-4 text-sm" aria-label="Næste og forrige guide">
+  <nav class="mt-10 flex justify-between gap-4 text-sm" aria-label="Forrige og næste guide">
     {forrige
       ? <a href={guideUrl(forrige)} class="text-fjord-600 hover:underline dark:text-fjord-200">← {forrige.data.title}</a>
       : <span />}

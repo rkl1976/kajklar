@@ -49,7 +49,7 @@ Når I kan se hinanden og skal signalere en manøvre, bruges korte stød på hor
 - **Tre korte stød** = "Jeg bakker."
 - **Mindst fem korte stød (hurtigt efter hinanden)** = "Jeg forstår ikke dine hensigter" eller "pas på!" — brug det, hvis du er i tvivl om, hvad den anden båd har tænkt sig, eller hvis en situation ser farlig ud.
 
-I praksis bruger de fleste fritidssejlere sjældent lydsignaler, men det er godt at kunne genkende dem, når et større skib eller en erhvervsfarer bruger dem over for dig.
+I praksis bruger de fleste fritidssejlere sjældent lydsignaler, men det er godt at kunne genkende dem, når et større skib eller erhvervstrafikken bruger dem over for dig.
 
 ## Praktisk Limfjords-eksempel
 

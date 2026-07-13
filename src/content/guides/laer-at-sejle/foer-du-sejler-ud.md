@@ -10,7 +10,7 @@ De erfarne sejlere i Limfjorden har én ting til fælles: de har en fast rutine,
 
 ## Tjek vejrudsigten
 
-Start altid med DMI's farvandsudsigt for Limfjorden. Kig efter vindstyrke i meter i sekundet (m/s) — det er den enhed, de danske varsler bruger, ikke sekundmeter i vindstød alene.
+Start altid med DMI's farvandsudsigt for Limfjorden. Kig efter vindstyrke i meter i sekundet (m/s) — det er den enhed, de danske varsler bruger. Se både på den gennemsnitlige vindstyrke (middelvinden) og på vindstødene, som ofte er kraftigere end middelvinden.
 
 Som tommelfingerregel for en ny motorbådsfører:
 

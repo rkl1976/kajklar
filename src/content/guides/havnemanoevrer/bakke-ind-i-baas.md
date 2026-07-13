@@ -30,11 +30,11 @@ Fra grundlæggende manøvrering husker du, at propellen får agterenden til at t
 
 ## Styr med gas, ikke med rat
 
-En hyppig nybegynderfejl er at forsøge at style en bakke-manøvre alene med rorudslag, som om båden var en bil. I bak reagerer de fleste både langsommere og mindre forudsigeligt på roret end på fremad. Brug i stedet gaskontrol som dit primære styremiddel: et kort skub på den ene side af neutral flytter agterenden mere effektivt end et stort rorudslag alene. Se rorudslaget som finjustering — gassen er hovedværktøjet.
+En hyppig nybegynderfejl er at forsøge at styre en bakke-manøvre alene med rorudslag, som om båden var en bil. I bak reagerer de fleste både langsommere og mindre forudsigeligt på roret end på fremad. Brug i stedet gaskontrol som dit primære styremiddel: et kort skub på den ene side af neutral flytter agterenden mere effektivt end et stort rorudslag alene. Se rorudslaget som finjustering — gassen er hovedværktøjet.
 
 ## Klargøring inden du bakker ind
 
-Præcis som ved en almindelig anløb skal alt være klart, før du sætter manøvren i gang:
+Præcis som ved et almindeligt anløb skal alt være klart, før du sætter manøvren i gang:
 
 1. **Fendere ud** i begge sider, da du typisk har naboer tæt på i begge sider af båsen.
 2. **Agtertrosse og fortrosse klar**, og en person klar til at tage fat i pæl eller bom, så snart båden er tæt nok på.

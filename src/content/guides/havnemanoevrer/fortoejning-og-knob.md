@@ -1,12 +1,12 @@
 ---
 title: "Fortøjning — spring, fendere og de tre vigtigste knob"
-description: "Fortøj så båden ligger stille i al slags vejr — med pælestik, klampestik og røringsknob."
+description: "Fortøj så båden ligger stille i al slags vejr — med pælestik, klampestik og rundtørn med to halvstik."
 kategori: "havnemanoevrer"
 raekkefoelge: 6
 svaerhedsgrad: "begynder"
 ---
 
-En vellykket anløb er kun halvdelen af arbejdet — resten afhænger af, hvor godt du fortøjer, når båden først ligger ved kajen. En god fortøjning betyder, at du kan gå fra borde og sove roligt om natten, uanset om vejret skifter, mens en sjusket fortøjning kan koste dig en skrabet skude eller værre.
+Et vellykket anløb er kun halvdelen af arbejdet — resten afhænger af, hvor godt du fortøjer, når båden først ligger ved kajen. En god fortøjning betyder, at du kan gå fra borde og sove roligt om natten, uanset om vejret skifter, mens en sjusket fortøjning kan koste dig en skrabet skude eller værre.
 
 ## De fire trosser og hvad de gør
 

@@ -16,7 +16,7 @@ Reglen er enkel: dine lanterner skal være tændt fra solnedgang til solopgang, 
 
 Kravene til lanterneføring afhænger af bådens længde:
 
-**Motordrevet fartøj under 12 meter** skal som udgangspunkt føre toplys (synligt 2 sømil), sidelys — grønt om styrbord og rødt om bagbord, hver synligt cirka 1 sømil — samt agterlys (hvidt, synligt 2 sømil). Alternativt kan toplys og sidelys på mindre både kombineres i én lanterne, forudsat den opfylder de tekniske krav til synsvidde og synsfelt.
+**Motordrevet fartøj under 12 meter** skal som udgangspunkt føre toplys (synligt 2 sømil), sidelys — grønt om styrbord og rødt om bagbord, hver synligt cirka 1 sømil — samt agterlys (hvidt, synligt 2 sømil). Alternativt kan toplys og agterlys erstattes af ét hvidt lys, der er synligt hele horisonten rundt (søvejsreglernes regel 23) — men sidelysene skal stadig føres. De to sidelys må dog gerne kombineres i én tofarvet lanterne i stævnen. Bemærk, at en trefarvet lanterne, hvor toplys og sidelys er samlet i én lanterne i mastetoppen, kun må bruges af sejlbåde under sejl — det er ikke en mulighed for en motordreven båd.
 
 **Motordrevet fartøj under 7 meter, med en maksimal fart på højst 7 knob**, kan i stedet nøjes med et enkelt hvidt lys, der er synligt hele horisonten rundt, og sidelys, hvis det er praktisk muligt at føre dem. Det er en lempelse, der er tænkt til netop mindre jolle- og bådstørrelser, hvor fuld lanterneføring kan være vanskelig at montere.
 
@@ -34,7 +34,7 @@ At kunne "læse" en anden båds lys er en af de vigtigste færdigheder ved natte
 
 ## Erhvervstrafikkens lys
 
-Større erhvervsfartøjer og skibe, der er begrænsede i deres evne til at manøvrere, kan føre ekstra lys ud over de almindelige — for eksempel yderligere toplys eller farvede lys, der viser deres status. Som fritidssejler behøver du ikke kunne alle kombinationer udenad, men lægg mærke til, om et fartøj viser usædvanligt mange eller anderledes placerede lys, end du forventer — det er et signal om, at fartøjet kan have begrænset manøvreevne eller er i gang med en særlig opgave, og at du bør holde ekstra god afstand.
+Større erhvervsfartøjer og skibe, der er begrænsede i deres evne til at manøvrere, kan føre ekstra lys ud over de almindelige — for eksempel yderligere toplys eller farvede lys, der viser deres status. Som fritidssejler behøver du ikke kunne alle kombinationer udenad, men læg mærke til, om et fartøj viser usædvanligt mange eller anderledes placerede lys, end du forventer — det er et signal om, at fartøjet kan have begrænset manøvreevne eller er i gang med en særlig opgave, og at du bør holde ekstra god afstand.
 
 ## Praktiske råd til sejlads i mørke
 

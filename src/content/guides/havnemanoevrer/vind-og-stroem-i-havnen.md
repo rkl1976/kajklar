@@ -6,7 +6,7 @@ raekkefoelge: 1
 svaerhedsgrad: "begynder"
 ---
 
-Den vigtigste regel for enhver havnemanøvre lyder sådan: løs opgaven, før du sejler ind. En god fortøjning bliver ikke afgjort ved kajen — den bliver afgjort et par bådlængder udenfor, mens du stadig har god plads, god tid og god fart til at ændre planen. Langt de fleste dramatiske kaj-episoder skyldes ikke dårlig rortenik, men at skipperen først begyndte at tænke på vind og strøm i det øjeblik båden allerede var tæt på træet.
+Den vigtigste regel for enhver havnemanøvre lyder sådan: løs opgaven, før du sejler ind. En god fortøjning bliver ikke afgjort ved kajen — den bliver afgjort et par bådlængder udenfor, mens du stadig har god plads, god tid og god fart til at ændre planen. Langt de fleste dramatiske kaj-episoder skyldes ikke dårlig rorteknik, men at skipperen først begyndte at tænke på vind og strøm i det øjeblik båden allerede var tæt på træet.
 
 ## Stop op, før du går ind
 

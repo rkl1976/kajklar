@@ -19,7 +19,7 @@ Gå denne rækkefølge igennem, hver gang:
 
 ## Startprocedure, trin for trin
 
-Sæt gearet i **frigear** (de fleste motorer kan slet ikke starte i gear, som en sikkerhedsspærre). Drej nøglen eller træk i startsnoren i et jævnt, bestemt træk. Giv motoren et par sekunder til at finde sin rytme — undgå at overspinde eller gaspe voldsomt lige efter start.
+Sæt gearet i **frigear** (de fleste motorer kan slet ikke starte i gear, som en sikkerhedsspærre). Drej nøglen eller træk i startsnoren i et jævnt, bestemt træk. Giv motoren et par sekunder til at finde sin rytme — undgå at give voldsomt gas lige efter start, så du drukner motoren i benzin.
 
 ## Kig efter kølevandet med det samme
 

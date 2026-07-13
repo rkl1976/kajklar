@@ -6,7 +6,7 @@ raekkefoelge: 3
 svaerhedsgrad: "oevet"
 ---
 
-Når vinden begynder at friske, ændrer havnemanøvren karakter. De samme grundprincipper gælder stadig — flad vinkel, styrefart, en klar plan — men nu skal du aktivt bruge vinden i stedet for bare at tage højde for den. Denne guide er for dig, der har styr på den rolige anløb langs kaj, og som nu vil kunne håndtere en dag med mere vind i pladsen.
+Når vinden begynder at friske, ændrer havnemanøvren karakter. De samme grundprincipper gælder stadig — flad vinkel, styrefart, en klar plan — men nu skal du aktivt bruge vinden i stedet for bare at tage højde for den. Denne guide er for dig, der har styr på det rolige anløb langs kaj, og som nu vil kunne håndtere en dag med mere vind i pladsen.
 
 ## Pålandsvind: lad vinden gøre arbejdet
 

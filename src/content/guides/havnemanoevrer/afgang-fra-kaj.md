@@ -10,7 +10,7 @@ Afgang fra kajen får ofte langt mindre opmærksomhed end anløb, men den er lig
 
 ## Afgang er en manøvre — planlæg den først
 
-Før du rører en eneste trosse, så stop op og tænk manøvren igennem præcis som ved en anløb: hvor blæser vinden fra, hvilken vej vil båden bevæge sig, når den slipper kajen, og hvilken rækkefølge skal trosserne af i? En plan, der findes i hovedet før du starter, er langt mere værd end hurtige beslutninger, mens båden allerede er i bevægelse.
+Før du rører en eneste trosse, så stop op og tænk manøvren igennem præcis som ved et anløb: hvor blæser vinden fra, hvilken vej vil båden bevæge sig, når den slipper kajen, og hvilken rækkefølge skal trosserne af i? En plan, der findes i hovedet før du starter, er langt mere værd end hurtige beslutninger, mens båden allerede er i bevægelse.
 
 ## Motoren i gang og varm — før du kaster los
 
