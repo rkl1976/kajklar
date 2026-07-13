@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-fjord-50: #f0fafc;
+  --color-fjord-100: #e0f2f7;
+  --color-fjord-200: #bae5ef;
+  --color-fjord-500: #1191b4;
+  --color-fjord-600: #0e7490;
+  --color-fjord-700: #0c5f77;
+  --color-fjord-900: #0f3b4c;
+  --color-rav-100: #fef3e2;
+  --color-rav-500: #f59e0b;
+  --color-rav-600: #d97706;
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
