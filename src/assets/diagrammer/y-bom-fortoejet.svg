@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Fortøjet ved Y-bom: forenden fortøjet ved kajen og agterenden til bommenes yderender, med slæk så bommen kan arbejde">
+  <defs>
+    <g id="baad">
+      <path d="M -35 -13 L 15 -13 Q 38 0 15 13 L -35 13 Q -42 0 -35 -13 Z" fill="#0e7490"/>
+      <circle cx="-18" cy="0" r="4" fill="#e0f2f7"/>
+    </g>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <rect y="330" width="600" height="70" fill="#94a3b8"/>
+  <text x="16" y="372" fill="#334155" font-size="15" font-weight="700">KAJ</text>
+  <rect x="246" y="200" width="8" height="130" fill="#64748b"/>
+  <rect x="346" y="200" width="8" height="130" fill="#64748b"/>
+  <circle cx="262" cy="336" r="5" fill="#334155"/>
+  <circle cx="338" cy="336" r="5" fill="#334155"/>
+  <use href="#baad" transform="translate(196 265) rotate(90)" opacity="0.45"/>
+  <g stroke="#0f3b4c" stroke-width="2.5" fill="none">
+    <path d="M 287 227 Q 268 214 252 206"/>
+    <path d="M 313 227 Q 332 214 348 206"/>
+    <path d="M 287 277 L 264 332"/>
+    <path d="M 313 277 L 336 332"/>
+  </g>
+  <use href="#baad" transform="translate(300 262) rotate(90)"/>
+  <g fill="#0f3b4c" font-size="14" font-weight="700">
+    <text x="26" y="52">Bommen holder afstanden til naboen</text>
+    <text x="362" y="222">Agtertrosser til bommens</text>
+    <text x="362" y="242">yderender — med lidt slæk</text>
+    <text x="30" y="300">Forenden fortøjes ved kajen</text>
+  </g>
+  <text x="70" y="372" fill="#1f2937" font-size="13" font-weight="700">⚠️ Træd aldrig ud på bommen med fuld vægt</text>
+</svg>

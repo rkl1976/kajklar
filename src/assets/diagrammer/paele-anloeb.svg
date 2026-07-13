@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Anløb mellem agterpæle i tre trin: sigt midt mellem pælene, trosse over pælen på vej ind, fortøj forenden ved kajen">
+  <defs>
+    <g id="baad">
+      <path d="M -35 -13 L 15 -13 Q 38 0 15 13 L -35 13 Q -42 0 -35 -13 Z" fill="#0e7490"/>
+      <circle cx="-18" cy="0" r="4" fill="#e0f2f7"/>
+    </g>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <rect y="330" width="600" height="70" fill="#94a3b8"/>
+  <text x="16" y="372" fill="#334155" font-size="15" font-weight="700">KAJ</text>
+  <circle cx="250" cy="175" r="9" fill="#8b5e34" stroke="#5d3f22" stroke-width="2"/>
+  <circle cx="350" cy="175" r="9" fill="#8b5e34" stroke="#5d3f22" stroke-width="2"/>
+  <text x="368" y="168" fill="#475569" font-size="12" font-weight="700">AGTERPÆLE</text>
+  <path d="M 170 108 Q 300 140 300 245" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#pil)"/>
+  <use href="#baad" transform="translate(140 80) rotate(45)" opacity="0.35"/>
+  <use href="#baad" transform="translate(300 190) rotate(90)" opacity="0.6"/>
+  <use href="#baad" transform="translate(300 282) rotate(90)"/>
+  <g fill="#0f3b4c" font-size="14" font-weight="700">
+    <text x="26" y="52">1. Sigt midt mellem pælene</text>
+    <text x="360" y="215">2. Trosse over pælen på vej ind</text>
+    <text x="352" y="300">3. Fortøj forenden ved kajen</text>
+  </g>
+</svg>
