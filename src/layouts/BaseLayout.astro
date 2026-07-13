@@ -19,12 +19,12 @@ const nav = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} · Til Kaj</title>
+    <title>{title} · KajKlar</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
     <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta property="og:title" content={`${title} · Til Kaj`} />
+    <meta property="og:title" content={`${title} · KajKlar`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <script is:inline>
@@ -36,7 +36,7 @@ const nav = [
   <body class="flex min-h-screen flex-col bg-white font-sans text-fjord-900 dark:bg-slate-900 dark:text-slate-100">
     <header class="sticky top-0 border-b border-fjord-100 bg-white/90 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
       <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
-        <a href="/" class="text-lg font-extrabold text-fjord-600 dark:text-fjord-200">⚓ Til Kaj</a>
+        <a href="/" class="text-lg font-extrabold text-fjord-600 dark:text-fjord-200">⚓ KajKlar</a>
         <nav class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" aria-label="Hovedmenu">
           {nav.map((item) => (
             <a href={item.href} class="hover:text-fjord-600 dark:hover:text-fjord-200">{item.label}</a>
@@ -51,7 +51,7 @@ const nav = [
     </main>
     <footer class="mt-12 border-t border-fjord-100 dark:border-slate-700">
       <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-500 dark:text-slate-400">
-        <p>Til Kaj vejleder — officielle regler og kilder gælder altid. <a href="/om/" class="underline">Om sitet</a>.</p>
+        <p>KajKlar vejleder — officielle regler og kilder gælder altid. <a href="/om/" class="underline">Om sitet</a>.</p>
       </div>
     </footer>
     <script is:inline>

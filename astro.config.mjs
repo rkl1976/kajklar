@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://tilkaj.dk',
+  site: 'https://kajklar.dk',
   integrations: [sitemap()],
   vite: { plugins: [tailwindcss()] },
 });

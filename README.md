@@ -1,4 +1,4 @@
-# ⚓ Til Kaj
+# ⚓ KajKlar
 
 Dansk website for nye motorbådssejlere — guides, havnemanøvrer, søvejsregler og
 havneguide med fokus på Limfjorden.
