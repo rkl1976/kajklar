@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Pålandsvind i pælebåsen: lad agtertrosserne løbe kontrolleret ud, og stram op, før boven når kajen">
+  <defs>
+    <g id="baad">
+      <path d="M -35 -13 L 15 -13 Q 38 0 15 13 L -35 13 Q -42 0 -35 -13 Z" fill="#0e7490"/>
+      <circle cx="-18" cy="0" r="4" fill="#e0f2f7"/>
+    </g>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <rect y="330" width="600" height="70" fill="#94a3b8"/>
+  <text x="16" y="372" fill="#334155" font-size="15" font-weight="700">KAJ</text>
+  <g stroke="#f59e0b" stroke-width="3" marker-end="url(#pil)">
+    <line x1="120" y1="30" x2="120" y2="85"/>
+    <line x1="200" y1="30" x2="200" y2="85"/>
+    <line x1="280" y1="30" x2="280" y2="85"/>
+  </g>
+  <text x="105" y="112" fill="#b45309" font-size="14" font-weight="700">VIND</text>
+  <circle cx="250" cy="160" r="9" fill="#8b5e34" stroke="#5d3f22" stroke-width="2"/>
+  <circle cx="350" cy="160" r="9" fill="#8b5e34" stroke="#5d3f22" stroke-width="2"/>
+  <g stroke="#0f3b4c" stroke-width="3" fill="none">
+    <line x1="313" y1="215" x2="350" y2="168"/>
+    <line x1="287" y1="215" x2="250" y2="168"/>
+  </g>
+  <use href="#baad" transform="translate(300 250) rotate(90)"/>
+  <line x1="300" y1="295" x2="300" y2="318" stroke="#0e7490" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#pil)"/>
+  <g fill="#0f3b4c" font-size="14" font-weight="700">
+    <text x="360" y="140">Pålandsvind vil køre båden</text>
+    <text x="360" y="160">helt ind i kajen</text>
+    <text x="26" y="230">Lad agtertrosserne løbe</text>
+    <text x="26" y="250">kontrolleret ud — stram op,</text>
+    <text x="26" y="270">FØR boven når kajen</text>
+  </g>
+</svg>

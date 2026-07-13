@@ -32,6 +32,22 @@ Når alle trosser er på plads, ligger båden fast mellem pælene og kajen — a
 
 ![Diagram: færdig fortøjning mellem pæle — agtertrosser til begge pæle, fortrosser til kajen, og boven må aldrig nå helt ind](../../../assets/diagrammer/paele-fortoejet.svg)
 
+Mange vælger at **krydse agtertrosserne** — styrbord klampe til bagbord pæl og omvendt. Krydset gør linerne længere, så de arbejder bedre, når vandstanden ændrer sig, og det holder samtidig agterenden centreret i båsen. Sørg blot for, at trosserne ikke gnaver mod hinanden dér, hvor de krydser.
+
+![Diagram: krydsede agtertrosser mellem pæle — styrbord klampe til bagbord pæl og omvendt giver længere liner og holder agterenden midt i båsen](../../../assets/diagrammer/paele-kryds-agter.svg)
+
+## Vind i pælebåsen
+
+Vinden bestemmer rækkefølgen på dine trosser. I **sidevind** gælder én regel over alle andre: tag **luv-pælen først** — altså pælen i den side, vinden kommer fra. Med en trosse på luv-pælen kan vinden ikke sætte båden ned på læ-pælen eller naboen, og resten af manøvren kan foregå i ro og mag.
+
+![Diagram: sidevind i pælebåsen — tag trossen på luv-pælen først, så vinden ikke sætter båden ned på læ-pælen eller naboen](../../../assets/diagrammer/paele-sidevind.svg)
+
+I **pålandsvind** — vind ind mod kajen — bliver båden ved med at skubbe fremad, længe efter du har taget farten af. Brug agtertrosserne som bremse: lad dem løbe kontrolleret ud, mens du glider ind, og stram op, **før** boven når kajen.
+
+![Diagram: pålandsvind i pælebåsen — lad agtertrosserne løbe kontrolleret ud, og stram op, før boven når kajen](../../../assets/diagrammer/paele-vind-mod-kaj.svg)
+
+I **fralandsvind** er det omvendt boven, der skal sikres hurtigt: vinden blæser den væk fra kajen, så hav fortrossen klar, og hold motoren i gang, til den er fast.
+
 ## Y-bomme: fendere og forsigtighed
 
 Ved Y-bomme gælder næsten de samme principper som ved et almindeligt anløb, blot med en flydende bom som ekstra element:
@@ -54,10 +70,12 @@ Ved Y-bomme gælder næsten de samme principper som ved et almindeligt anløb, b
 
 Er du alene om bord, er den mest pålidelige teknik at bruge en **midtskibsspring først**. Læg en lang trosse klar fra en midtskibsklampe, så du kan tage den om en pæl eller bomarm, mens du stadig sidder ved roret eller lige er sprunget fra borde. Med midtskibstrossen fastgjort ligger båden roligt nok til, at du kan gå frem og tilbage og få resten af fortøjningen på plads uden at skulle holde styr på hele båden med den ene hånd.
 
+![Diagram: solo-teknik i pælebås — øjet lægges over pælen fra midtskibsklampen på vej ind, trossen bremser blidt, og båden ligger stille, mens resten sættes](../../../assets/diagrammer/solo-midtskibsspring.svg)
+
 Læg gerne trosserne klar og tydeligt mærket, allerede før du sejler ind, så du ikke skal lede efter den rigtige line med den ene hånd på roret. Har du en fast gæsteplads, du vender tilbage til flere gange i sæsonen, kan det betale sig at øve rækkefølgen et par gange i roligt vejr, så hele forløbet — fra sigtelinje til sidste trosse — sidder på rygraden, næste gang du kommer ind med vind i pladsen.
 
 ## Vandstand og pæleafstand
 
 Vandstanden i Limfjorden kan variere med vind og vejr, hvilket betyder, at afstanden mellem vandoverfladen og toppen af en pæl ændrer sig fra besøg til besøg. Tjek derfor altid, at trossens øje kan glide frit op og ned ad pælen, uden at sætte sig fast i en spids eller et fremspring — ellers risikerer du, at båden hænger fast i pælen, når vandstanden falder, eller at trossen strammes unødigt op, når vandstanden stiger.
 
-> **Husk:** Sigt midt mellem pælene, brug øjet frem for knob på pælen, og fortøj altid begge ender — også når du er alene om bord.
+> **Husk:** Sigt midt mellem pælene, brug øjet frem for knob på pælen, tag luv-pælen først i sidevind, og fortøj altid begge ender — også når du er alene om bord.
