@@ -60,6 +60,24 @@ Regn altid med lidt ekstra: vind, bølger og havnemanøvrer æder tid, og brænd
 - **Dybder og gennemsejlingshøjder** angives i **meter** i danske søkort — havnesiderne her på sitet gør det samme. Ældre eller udenlandske kort kan bruge **favne** (1 favn = 1,83 m) eller fod, så tjek altid kortets enhedsangivelse.
 - **Bådlængder** angives traditionelt i **fod**: 1 fod = 30,48 cm. En "21-fods båd" er altså cirka 6,4 meter — og de fleste havnetakster er inddelt efter netop bådens længde i meter eller fod.
 
+Fordi der tit snakkes i fod, er her de mest gængse bådlængder omregnet til meter:
+
+| Fod | Meter |
+|----:|:------|
+| 17′ | ca. 5,2 m |
+| 18′ | ca. 5,5 m |
+| 19′ | ca. 5,8 m |
+| 21′ | ca. 6,4 m |
+| 23′ | ca. 7,0 m |
+| 25′ | ca. 7,6 m |
+| 27′ | ca. 8,2 m |
+| 30′ | ca. 9,1 m |
+| 33′ | ca. 10,1 m |
+| 36′ | ca. 11,0 m |
+| 40′ | ca. 12,2 m |
+
+Vil du selv regne om: **fod × 0,3 giver et hurtigt overslag i meter** (fod × 0,3048 for det præcise tal), og **meter ÷ 0,3 den anden vej**. En 25-fods båd er altså cirka 25 × 0,3 = 7,5 meter — tæt nok på til at vurdere, om den passer til en gæsteplads eller en takstgruppe.
+
 ## Positioner — grader og minutter
 
 En position som **57°03,2′N 009°55,3′Ø** læses "57 grader 3,2 minutter nord, 9 grader 55,3 minutter øst". Og her lukker cirklen: fordi ét breddeminut er én sømil, kan du aflæse afstande direkte af positionsforskellene på nord-syd-aksen. Det er det format, du møder på havnesiderne her på sitet, i Den Danske Havnelods og på dit søkort — og det format, du skal opgive til redningstjenesten, hvis uheldet er ude.
