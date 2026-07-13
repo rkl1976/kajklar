@@ -1,8 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { KATEGORIER, type Kategori } from '../../lib/kategorier';
 import { guideUrl } from '../../lib/guides';
+import { KATEGORI_FOTOS } from '../../lib/kategoriFotos';
 
 export function getStaticPaths() {
   return (Object.keys(KATEGORIER) as Kategori[]).map((kategori) => ({ params: { kategori } }));
@@ -10,22 +12,30 @@ export function getStaticPaths() {
 
 const kategori = Astro.params.kategori as Kategori;
 const info = KATEGORIER[kategori];
+const foto = KATEGORI_FOTOS[kategori];
 const guides = (await getCollection('guides', ({ data }) => data.kategori === kategori))
   .sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge);
 ---
 <BaseLayout title={info.titel} description={info.beskrivelse}>
-  <h1 class="text-3xl font-extrabold">{info.emoji} {info.titel}</h1>
-  <p class="mt-2 text-slate-600 dark:text-slate-300">{info.beskrivelse}</p>
+  <section class="relative h-56 overflow-hidden rounded-3xl sm:h-64">
+    <Image src={foto.billede} alt={foto.alt} class="absolute inset-0 h-full w-full object-cover"
+      widths={[768, 1280]} sizes="(min-width: 1024px) 1024px, 100vw" loading="eager" />
+    <div class="absolute inset-0 bg-gradient-to-t from-fjord-900/85 via-fjord-900/30 to-fjord-900/10"></div>
+    <div class="absolute bottom-0 p-6 sm:p-8">
+      <h1 class="font-display text-3xl font-black text-white sm:text-4xl">{info.emoji} {info.titel}</h1>
+      <p class="mt-2 max-w-xl text-sm text-fjord-50/90 sm:text-base">{info.beskrivelse}</p>
+    </div>
+  </section>
   <ol class="mt-8 space-y-3">
     {guides.map((guide) => (
       <li>
         <a href={guideUrl(guide)}
-          class="flex items-start gap-4 rounded-xl border border-fjord-100 p-4 transition hover:border-fjord-500 dark:border-slate-700 dark:hover:border-fjord-200">
-          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-fjord-100 font-bold text-fjord-700 dark:bg-slate-800 dark:text-fjord-200">
+          class="flex items-start gap-4 rounded-2xl border border-fjord-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-fjord-500 hover:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:hover:border-fjord-200">
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-fjord-100 font-display text-lg font-black text-fjord-700 dark:bg-slate-900 dark:text-fjord-200">
             {guide.data.raekkefoelge}
           </span>
           <span>
-            <span class="font-semibold">{guide.data.title}</span>
+            <span class="font-display text-lg font-bold">{guide.data.title}</span>
             <span class="mt-1 block text-sm text-slate-600 dark:text-slate-400">{guide.data.description}</span>
           </span>
         </a>

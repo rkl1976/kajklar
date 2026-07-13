@@ -1,50 +1,95 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { KATEGORIER } from '../lib/kategorier';
+import { KATEGORIER, type Kategori } from '../lib/kategorier';
 import { guideUrl } from '../lib/guides';
+import { KATEGORI_FOTOS, HAVNE_FOTO } from '../lib/kategoriFotos';
+import heroBillede from '../assets/fotos/hero-badebro.jpg';
 
 const guides = await getCollection('guides');
 const fremhaevet = guides.find((g) => g.id === 'havnemanoevrer/laegge-til-i-sidevind')
   ?? [...guides].sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge)[0];
 
 const omraader = [
-  ...Object.entries(KATEGORIER).map(([slug, info]) => ({ href: `/${slug}/`, ...info })),
+  ...(Object.entries(KATEGORIER) as [Kategori, (typeof KATEGORIER)[Kategori]][]).map(([slug, info]) => ({
+    href: `/${slug}/`,
+    foto: KATEGORI_FOTOS[slug],
+    ...info,
+  })),
   {
     href: '/havne/',
     titel: 'Havne',
     emoji: '🏘️',
     beskrivelse: 'Havneguide til Limfjorden — dybder, faciliteter og indsejling.',
+    foto: HAVNE_FOTO,
   },
 ];
 ---
-<BaseLayout title="Forside" description="Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden.">
-  <section class="rounded-3xl bg-gradient-to-b from-fjord-100 to-fjord-50 px-6 py-14 text-center dark:from-slate-800 dark:to-slate-900">
-    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Lær at sejle motorbåd — og kom sikkert til kaj 🌊</h1>
-    <p class="mx-auto mt-4 max-w-xl text-slate-600 dark:text-slate-300">
-      Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden.
-    </p>
-    <a href="/laer-at-sejle/" class="mt-6 inline-block rounded-full bg-fjord-600 px-6 py-2.5 font-semibold text-white hover:bg-fjord-700">
-      Kom i gang →
-    </a>
+<BaseLayout title="Forside" description="Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden." bred>
+  <section class="relative flex min-h-[72vh] items-end overflow-hidden">
+    <Image src={heroBillede} alt="Badebro på stille fjord i skumringen med dramatisk himmel"
+      class="absolute inset-0 h-full w-full object-cover"
+      widths={[768, 1280, 1920]} sizes="100vw" loading="eager" />
+    <div class="absolute inset-0 bg-gradient-to-t from-fjord-900/90 via-fjord-900/40 to-fjord-900/10"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-44">
+      <p class="glid-op inline-block rounded-full bg-fjord-900/60 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.25em] text-rav-500 backdrop-blur-sm">
+        Guides til motorbådssejlere i Limfjorden
+      </p>
+      <h1 class="glid-op mt-4 max-w-2xl font-display text-4xl font-black leading-[1.05] text-white sm:text-6xl">
+        Kom sikkert <em class="italic text-fjord-200">til kaj</em>.
+      </h1>
+      <p class="glid-op-2 mt-5 max-w-xl text-lg text-fjord-50/90">
+        Lær at sejle motorbåd, mestr havnemanøvrerne, og kend reglerne — fra Thyborøn til Aalborg.
+      </p>
+      <div class="glid-op-3 mt-8 flex flex-wrap gap-3">
+        <a href="/laer-at-sejle/"
+          class="rounded-full bg-rav-500 px-6 py-3 font-semibold text-fjord-900 shadow-lg shadow-rav-500/25 transition hover:bg-rav-600 hover:text-white">
+          Kom i gang →
+        </a>
+        <a href="/havne/"
+          class="rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">
+          Udforsk havnene
+        </a>
+      </div>
+    </div>
   </section>
-  <section class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Indholdsområder">
-    {omraader.map((omraade) => (
-      <a href={omraade.href}
-        class="rounded-2xl border border-fjord-100 p-5 transition hover:border-fjord-500 dark:border-slate-700 dark:hover:border-fjord-200">
-        <span class="text-2xl">{omraade.emoji}</span>
-        <h2 class="mt-2 font-bold">{omraade.titel}</h2>
-        <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{omraade.beskrivelse}</p>
-      </a>
-    ))}
+
+  <section class="mx-auto max-w-6xl px-4 py-14" aria-label="Indholdsområder">
+    <h2 class="font-display text-2xl font-black sm:text-3xl">Fire veje til at blive KajKlar</h2>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {omraader.map((omraade) => (
+        <a href={omraade.href}
+          class="group overflow-hidden rounded-2xl border border-fjord-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
+          <div class="relative h-40 overflow-hidden">
+            <Image src={omraade.foto.billede} alt={omraade.foto.alt}
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              widths={[400, 640]} sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
+            <div class="absolute inset-0 bg-gradient-to-t from-fjord-900/60 to-transparent"></div>
+            <span class="absolute bottom-3 left-4 text-2xl drop-shadow">{omraade.emoji}</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-lg font-bold">{omraade.titel}</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{omraade.beskrivelse}</p>
+          </div>
+        </a>
+      ))}
+    </div>
   </section>
+
   {fremhaevet && (
-    <section class="mt-10 rounded-2xl bg-rav-100 p-6 dark:bg-slate-800">
-      <span class="text-xs font-bold uppercase tracking-wide text-rav-600">Fremhævet guide</span>
-      <h2 class="mt-1 text-xl font-bold">
-        <a href={guideUrl(fremhaevet)} class="hover:underline">{fremhaevet.data.title}</a>
-      </h2>
-      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">{fremhaevet.data.description}</p>
+    <section class="mx-auto max-w-6xl px-4 pb-16">
+      <div class="rounded-3xl bg-gradient-to-r from-fjord-700 to-fjord-600 p-8 dark:from-slate-800 dark:to-fjord-900 sm:p-10">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-rav-500">Fremhævet guide</span>
+        <h2 class="mt-2 font-display text-2xl font-black text-white sm:text-3xl">
+          <a href={guideUrl(fremhaevet)} class="hover:underline">{fremhaevet.data.title}</a>
+        </h2>
+        <p class="mt-2 max-w-2xl text-fjord-50/90">{fremhaevet.data.description}</p>
+        <a href={guideUrl(fremhaevet)}
+          class="mt-5 inline-block rounded-full bg-white/15 px-5 py-2 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/25">
+          Læs guiden →
+        </a>
+      </div>
     </section>
   )}
 </BaseLayout>

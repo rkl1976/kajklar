@@ -1,12 +1,15 @@
 ---
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/instrument-sans';
 import '../styles/global.css';
 
 interface Props {
   title: string;
   description: string;
+  bred?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, bred = false } = Astro.props;
 const nav = [
   { href: '/laer-at-sejle/', label: 'Lær at sejle' },
   { href: '/havnemanoevrer/', label: 'Havnemanøvrer' },
@@ -19,6 +22,7 @@ const nav = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} · KajKlar</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
@@ -34,24 +38,43 @@ const nav = [
     </script>
   </head>
   <body class="flex min-h-screen flex-col bg-white font-sans text-fjord-900 dark:bg-slate-900 dark:text-slate-100">
-    <header class="sticky top-0 border-b border-fjord-100 bg-white/90 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
-      <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
-        <a href="/" class="text-lg font-extrabold text-fjord-600 dark:text-fjord-200">⚓ KajKlar</a>
-        <nav class="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm" aria-label="Hovedmenu">
+    <header class="sticky top-0 z-40 border-b border-fjord-100/70 bg-white/80 backdrop-blur-md dark:border-slate-700/70 dark:bg-slate-900/80">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
+        <a href="/" class="font-display text-xl font-black tracking-tight text-fjord-700 dark:text-fjord-200">⚓ KajKlar</a>
+        <nav class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm font-medium" aria-label="Hovedmenu">
           {nav.map((item) => (
-            <a href={item.href} class="hover:text-fjord-600 dark:hover:text-fjord-200">{item.label}</a>
+            <a href={item.href} class="transition-colors hover:text-fjord-600 dark:hover:text-fjord-200">{item.label}</a>
           ))}
           <button id="theme-toggle" type="button" aria-label="Skift mellem lys og mørk visning"
-            class="rounded-full border border-fjord-100 px-2 py-1 dark:border-slate-600">🌓</button>
+            class="rounded-full border border-fjord-100 px-2 py-1 transition-colors hover:border-fjord-500 dark:border-slate-600 dark:hover:border-fjord-200">🌓</button>
         </nav>
       </div>
     </header>
-    <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
+    <main class:list={['w-full flex-1', !bred && 'mx-auto max-w-5xl px-4 py-8']}>
       <slot />
     </main>
-    <footer class="mt-12 border-t border-fjord-100 dark:border-slate-700">
-      <div class="mx-auto max-w-5xl px-4 py-6 text-sm text-slate-500 dark:text-slate-400">
-        <p>KajKlar vejleder — officielle regler og kilder gælder altid. <a href="/om/" class="underline">Om sitet</a>.</p>
+    <footer class="mt-16 border-t border-fjord-100 bg-fjord-50 dark:border-slate-700 dark:bg-slate-950">
+      <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-3">
+        <div>
+          <p class="font-display text-lg font-black text-fjord-700 dark:text-fjord-200">⚓ KajKlar</p>
+          <p class="mt-2 max-w-xs text-sm text-slate-600 dark:text-slate-400">
+            Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden.
+          </p>
+        </div>
+        <nav class="text-sm" aria-label="Sidefod">
+          <p class="font-semibold">Indhold</p>
+          <ul class="mt-2 space-y-1.5 text-slate-600 dark:text-slate-400">
+            {nav.map((item) => (
+              <li><a href={item.href} class="hover:text-fjord-600 hover:underline dark:hover:text-fjord-200">{item.label}</a></li>
+            ))}
+            <li><a href="/om/" class="hover:text-fjord-600 hover:underline dark:hover:text-fjord-200">Om sitet</a></li>
+          </ul>
+        </nav>
+        <div class="text-sm text-slate-600 dark:text-slate-400">
+          <p class="font-semibold text-fjord-900 dark:text-slate-100">Sejl på den sikre side</p>
+          <p class="mt-2">KajKlar vejleder — officielle regler og kilder gælder altid. Du sejler på eget ansvar.</p>
+          <p class="mt-2"><a href="/om/" class="underline hover:text-fjord-600 dark:hover:text-fjord-200">Læs ansvarsfraskrivelsen</a></p>
+        </div>
       </div>
     </footer>
     <script is:inline>
