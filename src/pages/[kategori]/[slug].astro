@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { KATEGORIER } from '../../lib/kategorier';
+import { guideSlug, guideUrl } from '../../lib/guides';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => ({
+    params: { kategori: guide.data.kategori, slug: guideSlug(guide) },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const info = KATEGORIER[guide.data.kategori];
+const soeskende = (await getCollection('guides', ({ data }) => data.kategori === guide.data.kategori))
+  .sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge);
+const index = soeskende.findIndex((g) => g.id === guide.id);
+const forrige = index > 0 ? soeskende[index - 1] : undefined;
+const naeste = index < soeskende.length - 1 ? soeskende[index + 1] : undefined;
+---
+<BaseLayout title={guide.data.title} description={guide.data.description}>
+  <nav class="text-sm" aria-label="Brødkrumme">
+    <a href={`/${guide.data.kategori}/`} class="text-fjord-600 hover:underline dark:text-fjord-200">
+      ← {info.emoji} {info.titel}
+    </a>
+  </nav>
+  {guide.data.kategori === 'regler' && (
+    <div class="mt-4 rounded-xl border border-rav-500/40 bg-rav-100 p-4 text-sm dark:bg-slate-800">
+      ⚠️ Denne side er en vejledning. Søfartsstyrelsens officielle regler gælder altid — tjek de gældende bestemmelser, før du sejler.
+    </div>
+  )}
+  <article class="prose prose-slate mt-6 max-w-none dark:prose-invert">
+    <h1>{guide.data.title}</h1>
+    <Content />
+  </article>
+  <nav class="mt-10 flex justify-between gap-4 text-sm" aria-label="Næste og forrige guide">
+    {forrige
+      ? <a href={guideUrl(forrige)} class="text-fjord-600 hover:underline dark:text-fjord-200">← {forrige.data.title}</a>
+      : <span />}
+    {naeste
+      ? <a href={guideUrl(naeste)} class="text-right text-fjord-600 hover:underline dark:text-fjord-200">{naeste.data.title} →</a>
+      : <span />}
+  </nav>
+</BaseLayout>

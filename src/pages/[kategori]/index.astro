@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { KATEGORIER, type Kategori } from '../../lib/kategorier';
+import { guideUrl } from '../../lib/guides';
+
+export function getStaticPaths() {
+  return (Object.keys(KATEGORIER) as Kategori[]).map((kategori) => ({ params: { kategori } }));
+}
+
+const kategori = Astro.params.kategori as Kategori;
+const info = KATEGORIER[kategori];
+const guides = (await getCollection('guides', ({ data }) => data.kategori === kategori))
+  .sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge);
+---
+<BaseLayout title={info.titel} description={info.beskrivelse}>
+  <h1 class="text-3xl font-extrabold">{info.emoji} {info.titel}</h1>
+  <p class="mt-2 text-slate-600 dark:text-slate-300">{info.beskrivelse}</p>
+  <ol class="mt-8 space-y-3">
+    {guides.map((guide) => (
+      <li>
+        <a href={guideUrl(guide)}
+          class="flex items-start gap-4 rounded-xl border border-fjord-100 p-4 transition hover:border-fjord-500 dark:border-slate-700 dark:hover:border-fjord-200">
+          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-fjord-100 font-bold text-fjord-700 dark:bg-slate-800 dark:text-fjord-200">
+            {guide.data.raekkefoelge}
+          </span>
+          <span>
+            <span class="font-semibold">{guide.data.title}</span>
+            <span class="mt-1 block text-sm text-slate-600 dark:text-slate-400">{guide.data.description}</span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</BaseLayout>
