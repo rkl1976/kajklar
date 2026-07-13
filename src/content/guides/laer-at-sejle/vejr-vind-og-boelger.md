@@ -2,7 +2,7 @@
 title: "Vejr, vind og bølger i Limfjorden"
 description: "Sådan læser du vejrudsigten som sejler — og forstår hvorfor Limfjorden kan være krap."
 kategori: "laer-at-sejle"
-raekkefoelge: 6
+raekkefoelge: 7
 svaerhedsgrad: "begynder"
 ---
 

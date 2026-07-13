@@ -2,7 +2,7 @@
 title: "Sikkerhed om bord"
 description: "Redningsveste, mand-over-bord og kommunikation — det, der skal sidde på rygraden."
 kategori: "laer-at-sejle"
-raekkefoelge: 7
+raekkefoelge: 8
 svaerhedsgrad: "begynder"
 ---
 

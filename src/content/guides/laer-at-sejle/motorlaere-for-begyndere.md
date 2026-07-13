@@ -2,7 +2,7 @@
 title: "Motorlære for begyndere"
 description: "Start motoren rigtigt, hold øje med kølevandet, og undgå de klassiske motorfejl på vandet."
 kategori: "laer-at-sejle"
-raekkefoelge: 3
+raekkefoelge: 4
 svaerhedsgrad: "begynder"
 ---
 

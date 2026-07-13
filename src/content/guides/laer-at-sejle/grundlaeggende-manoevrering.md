@@ -2,7 +2,7 @@
 title: "Grundlæggende manøvrering"
 description: "Gas, styring og propellens finurligheder — forstå hvordan båden faktisk flytter sig."
 kategori: "laer-at-sejle"
-raekkefoelge: 4
+raekkefoelge: 5
 svaerhedsgrad: "begynder"
 ---
 

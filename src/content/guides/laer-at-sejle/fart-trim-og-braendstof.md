@@ -2,7 +2,7 @@
 title: "Fart, trim og brændstoføkonomi"
 description: "Kom i plan, trim motoren rigtigt, og få flere sømil på tanken."
 kategori: "laer-at-sejle"
-raekkefoelge: 5
+raekkefoelge: 6
 svaerhedsgrad: "begynder"
 ---
 

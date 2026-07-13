@@ -2,7 +2,7 @@
 title: "Før du sejler ud — tjekliste og klargøring"
 description: "Den faste rutine før hver tur: vejr, brændstof, sikkerhedsudstyr og en plan, der holder."
 kategori: "laer-at-sejle"
-raekkefoelge: 2
+raekkefoelge: 3
 svaerhedsgrad: "begynder"
 ---
 
