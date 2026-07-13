@@ -8,7 +8,7 @@ svaerhedsgrad: "begynder"
 
 Fart er ikke bare et spørgsmål om, hvor hurtigt du kan komme frem. Tæt på land, i havne og nær badende handler det om andres sikkerhed — og om dit eget ansvar, hvis noget går galt.
 
-## 300 meter-reglen: den gælder kun vandscootere
+## 300 meter-reglen — hvem gælder den egentlig for?
 
 Den kendte "300 meter fra kysten"-regel stammer fra vandscooterbekendtgørelsen og gælder **kun** vandscootere, jetski og lignende fartøjer under 4 meter, hvor føreren sidder eller står *på* skroget. For dem er sejlads inden for 300 meter fra kystlinjen som udgangspunkt forbudt — zonen må kun krydses **vinkelret på kysten med maksimalt 5 knob**, og til og fra havn skal sejlløbet følges.
 
