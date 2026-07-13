@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const havne = await getCollection('havne');
+  return havne.map((havn) => ({ params: { id: havn.id }, props: { havn } }));
+}
+
+const { havn } = Astro.props;
+const { Content } = await render(havn);
+const { navn, position, dybde, vhf, faciliteter, indsejling } = havn.data;
+const kortUrl = `https://www.openstreetmap.org/?mlat=${position.lat}&mlon=${position.lng}#map=15/${position.lat}/${position.lng}`;
+---
+<BaseLayout title={`${navn} Havn`} description={`Havneinfo for ${navn}: dybde, faciliteter og indsejlingsforhold.`}>
+  <a href="/havne/" class="text-sm text-fjord-600 hover:underline dark:text-fjord-200">← Alle havne</a>
+  <h1 class="mt-2 text-3xl font-extrabold">{navn}</h1>
+  <div class="mt-6 grid gap-4 sm:grid-cols-2">
+    <div class="rounded-xl bg-fjord-100 p-4 dark:bg-slate-800">
+      <h2 class="font-bold">Fakta</h2>
+      <dl class="mt-2 space-y-1 text-sm">
+        <div><dt class="inline font-semibold">Dybde:</dt> <dd class="inline">{dybde}</dd></div>
+        {vhf && <div><dt class="inline font-semibold">VHF:</dt> <dd class="inline">{vhf}</dd></div>}
+        <div>
+          <dt class="inline font-semibold">Position:</dt>
+          <dd class="inline">{position.lat.toFixed(3)}° N, {position.lng.toFixed(3)}° Ø — <a class="underline" href={kortUrl} rel="noopener">se kort</a></dd>
+        </div>
+      </dl>
+    </div>
+    <div class="rounded-xl bg-fjord-100 p-4 dark:bg-slate-800">
+      <h2 class="font-bold">Faciliteter</h2>
+      <ul class="mt-2 list-inside list-disc text-sm">
+        {faciliteter.map((f) => <li>{f}</li>)}
+      </ul>
+    </div>
+  </div>
+  <div class="mt-6 rounded-xl border border-fjord-200 p-4 dark:border-slate-700">
+    <h2 class="font-bold">Indsejling</h2>
+    <p class="mt-2 text-sm">{indsejling}</p>
+  </div>
+  <article class="prose prose-slate mt-8 max-w-none dark:prose-invert">
+    <Content />
+  </article>
+</BaseLayout>
