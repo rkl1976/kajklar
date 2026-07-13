@@ -14,4 +14,4 @@ Som gæstesejler ankommer du fra Struer Bugt og styrer mod havnens indløb, hvor
 
 Betaling af havnepenge sker via havnens betalingsside for gæster (se struerhavn.dk); interessant nok er den udbredte danske betalingsapp Tallyweb faktisk udviklet af firmaet Tallykey, som har hjemme i Struer, så digital betaling er noget, byen kender godt til.
 
-Struer er kendt som "lydens by" med Jenka-monumentet og Danmarks Radio- og Transistormuseum, og med gode busforbindelser og togstation lige ved havnen er det et oplagt sted at bytte besætning eller holde en dag mere, hvis vejret kræver det.
+Struer er kendt som hjemsted for Bang & Olufsen, og på Struer Museum kan du opleve den store B&O-udstilling og Lyduniverset, hvor hele familien kan lege og eksperimentere med lyd og teknik. Med gode busforbindelser og togstation lige ved havnen er det et oplagt sted at bytte besætning eller holde en dag mere, hvis vejret kræver det.

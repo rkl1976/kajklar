@@ -52,8 +52,7 @@ Et opdateret søkort er dit vigtigste redskab — både i papirform og som app. 
 
 ## Kilder
 
-- [Søfartsstyrelsen — Farvandsafmærkning (soesport.dk)](http://www.soesport.dk/Sider/Regler%20og%20uddannelse/Farvandsafmaerkning.aspx)
-- [Afmærkning af danske farvande — Søfartsstyrelsen/Farvandsvæsenet (PDF)](https://www.duelighed.dk/test_duelighedsproeve/navigation/Afmaerkning_af_danske_farvande_webudgave.pdf)
-- [Sejlguide.dk — Sømærker, bøjer og farvandsafmærkninger](https://www.sejlguide.dk/1-soemaerker/)
+- [Bekendtgørelse om farvandsafmærkning i dansk og grønlandsk afmærkningsområde m.v. (Afmærkningsbekendtgørelsen), BEK nr. 1466 af 29/06/2021 — Retsinformation](https://www.retsinformation.dk/eli/lta/2021/1466)
+- [Søfartsstyrelsen — Afmærkning af farvande](https://www.soefartsstyrelsen.dk/sikkerhed-til-soes/sejladssikkerhed/afmaerkning-af-farvande)
 
 > **Husk:** Er du i tvivl om en bøje eller en retning, så sæt farten ned og tjek søkortet igen — det er altid billigere end en grundstødning.

@@ -12,6 +12,6 @@ Havnen er en af de større lystbådehavne på egnen med over 300 pladser, og der
 
 Havnepenge betales digitalt via Tallyweb (tallyweb.dk/skive), enten fra egen telefon eller ved betalingsautomaten på havnen — praktisk, hvis du ankommer uden for kontortid. Der er ingen fast VHF-overvågning af havnen, så ring til havnekontoret på forhånd, hvis du har spørgsmål om plads.
 
-Skive by ligger en kort gåtur eller cykeltur fra havnen med et bredt udvalg af indkøbsmuligheder, restauranter og caféer. Kig efter Skive Å, der løber gennem bymidten, og den karakteristiske gamle bykerne omkring Skive Domkirke.
+Skive by ligger en kort gåtur eller cykeltur fra havnen med et bredt udvalg af indkøbsmuligheder, restauranter og caféer. Kig efter Skive Å, der løber gennem bymidten, og den karakteristiske gamle bykerne omkring Skive Kirke.
 
 Fordi bunden i dele af fjorden er forholdsvis lavvandet, har havnen søgt om at uddybe udvalgte områder af bassinet — så hvis du sejler med større dybgang, er det en god idé at kontakte havnen på forhånd og høre om aktuelle forhold.
