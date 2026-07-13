@@ -1,6 +1,50 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { KATEGORIER } from '../lib/kategorier';
+import { guideUrl } from '../lib/guides';
+
+const guides = await getCollection('guides');
+const fremhaevet = guides.find((g) => g.id === 'havnemanoevrer/laegge-til-i-sidevind')
+  ?? [...guides].sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge)[0];
+
+const omraader = [
+  ...Object.entries(KATEGORIER).map(([slug, info]) => ({ href: `/${slug}/`, ...info })),
+  {
+    href: '/havne/',
+    titel: 'Havne',
+    emoji: '🏘️',
+    beskrivelse: 'Havneguide til Limfjorden — dybder, faciliteter og indsejling.',
+  },
+];
 ---
 <BaseLayout title="Forside" description="Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden.">
-  <h1 class="text-3xl font-extrabold">⚓ Til Kaj — under opbygning</h1>
+  <section class="rounded-3xl bg-gradient-to-b from-fjord-100 to-fjord-50 px-6 py-14 text-center dark:from-slate-800 dark:to-slate-900">
+    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Lær at sejle motorbåd — og kom sikkert til kaj 🌊</h1>
+    <p class="mx-auto mt-4 max-w-xl text-slate-600 dark:text-slate-300">
+      Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden.
+    </p>
+    <a href="/laer-at-sejle/" class="mt-6 inline-block rounded-full bg-fjord-600 px-6 py-2.5 font-semibold text-white hover:bg-fjord-700">
+      Kom i gang →
+    </a>
+  </section>
+  <section class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Indholdsområder">
+    {omraader.map((omraade) => (
+      <a href={omraade.href}
+        class="rounded-2xl border border-fjord-100 p-5 transition hover:border-fjord-500 dark:border-slate-700 dark:hover:border-fjord-200">
+        <span class="text-2xl">{omraade.emoji}</span>
+        <h2 class="mt-2 font-bold">{omraade.titel}</h2>
+        <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{omraade.beskrivelse}</p>
+      </a>
+    ))}
+  </section>
+  {fremhaevet && (
+    <section class="mt-10 rounded-2xl bg-rav-100 p-6 dark:bg-slate-800">
+      <span class="text-xs font-bold uppercase tracking-wide text-rav-600">Fremhævet guide</span>
+      <h2 class="mt-1 text-xl font-bold">
+        <a href={guideUrl(fremhaevet)} class="hover:underline">{fremhaevet.data.title}</a>
+      </h2>
+      <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">{fremhaevet.data.description}</p>
+    </section>
+  )}
 </BaseLayout>
