@@ -12,6 +12,17 @@ Søvejsreglerne kan lyde som juratekst, men i praksis handler det hele om én ti
 
 Uanset hvad reglerne siger, gælder én regel over dem alle: du skal gøre, hvad der skal til for at undgå en kollision — også hvis du "har ret". Søvejsreglerne (bekendtgørelse om søvejsregler) kalder det "godt sømandskab", og en dommer eller forsikringssag vil altid spørge, om du gjorde det, der var nødvendigt for at undgå ulykken. At have vigepligt betyder ikke, at du må sejle videre og håbe på det bedste, hvis den anden ikke reagerer.
 
+## Genkend, hvad du møder på vandet
+
+Før du kan bruge vigereglerne, skal du kunne genkende, hvad det er for en slags fartøj, du møder — for reglerne afhænger af typen. Her er de fire, du oftest støder på i Limfjorden:
+
+![Illustration: fire bådtyper i profil — motorbåd (krydsningsregler gælder), sejlbåd for sejl (du viger), ro-/pagajfartøj (du viger) og et stort fragt-/erhvervsskib (hold dig helt væk)](../../../assets/diagrammer/baadtyper-genkendelse.svg)
+
+- **Motorbåd** — kendes på fri stævn uden sejl og typisk en åben styrepult eller kahyt. Møder du en anden motorbåd, gælder krydsnings- og mødereglerne nedenfor.
+- **Sejlbåd (for sejl)** — høj mast med sejl sat. Så længe motoren *ikke* kører, er det en sejlbåd, og du viger. Kører motoren, tæller den som motorbåd — det kan være svært at se, så hold øje med, om sejlene reelt trækker.
+- **Ro-/pagajfartøj** — kajakker, robåde og SUP'er ligger lavt, er svære at få øje på og kan ikke flytte sig hurtigt. Du viger og giver god plads.
+- **Fragt-/erhvervsskib** — stort skib med overbygning agter, ofte bundet til den dybe rende. Det kan hverken stoppe eller dreje for dig — hold dig helt væk, uanset hvad reglerne ellers siger.
+
 ## Motorbåd viger for sejlbåd og robåd
 
 Som udgangspunkt skal en motordrevet båd vige for et sejlskib, der sejler for sejl, og for en robåd. Tommelfingerregel: hvis den anden kan sejle uden motor, viger du. Der er dog vigtige undtagelser:
@@ -20,17 +31,25 @@ Som udgangspunkt skal en motordrevet båd vige for et sejlskib, der sejler for s
 - I snævre løb og sejlrender må mindre fartøjer og sejlbåde ikke være til hinder for et større skib, som kun kan manøvrere sikkert inde i selve rendens dybe vand — mere om det nedenfor.
 - Fartøjer, der overhaler, skal altid vige (se nedenfor), uanset hvad de sejler for.
 
+![Diagram: en motorbåd krydser en sejlbåd, der sejler for sejl — motorbåden sætter farten ned og drejer bagom sejlbåden. Undtagelse: sejler sejlbåden for motor, gælder de almindelige regler](../../../assets/diagrammer/vigeregel-motor-viger-sejl.svg)
+
 ## Stævn mod stævn: begge drejer styrbord
 
 Møder to motorbåde hinanden næsten stævn mod stævn — på kollisionskurs, lige på — skal begge dreje til styrbord (højre) og passere hinanden bagbord mod bagbord, ligesom biler der kører i hver sin vejside. Er du i tvivl om, hvorvidt I mødes helt stævn mod stævn, så drej alligevel til styrbord tidligt og tydeligt — det er den sikre løsning.
+
+![Diagram: to motorbåde mødes stævn mod stævn på kollisionskurs — begge drejer til styrbord og passerer hinanden bagbord mod bagbord](../../../assets/diagrammer/vigeregel-staevn-mod-staevn.svg)
 
 ## Krydsende kurser
 
 Krydser to motorbådes kurser hinanden, så der er risiko for sammenstød, er reglen: den båd, der har den anden båd om styrbord (på sin højre side), skal vige. Har du en anden båd kommende ind fra din højre side, er det altså dig, der skal holde af vejen — typisk ved at nedsætte farten eller dreje bagom den andens agterstavn. Den, der har vigepligt, skal vige tidligt, tydeligt og i god afstand, så den anden ikke er i tvivl om dine hensigter.
 
+![Diagram: to motorbådes kurser krydser hinanden — din båd har den anden om styrbord (fra højre), så du viger ved at dreje bagom dens agterstavn, mens den anden står på](../../../assets/diagrammer/vigeregel-krydsende.svg)
+
 ## Overhaling — den overhalende viger altid
 
 Vil du overhale en anden båd, er det dig, der har vigepligt, uanset hvad den forankørende sejler for. Selv en motorbåd, der overhaler en langsom robåd, skal holde godt af vejen og give plads. Reglen gælder, indtil du er helt forbi og klar af den andens kurs.
+
+![Diagram: den overhalende motorbåd bagfra svinger udenom og passerer den langsommere båd med god afstand hele vejen forbi](../../../assets/diagrammer/vigeregel-overhaling.svg)
 
 ## Hold godt til styrbord i snævre løb
 

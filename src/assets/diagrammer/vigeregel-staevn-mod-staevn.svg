@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="To motorbåde mødes næsten stævn mod stævn på kollisionskurs. Begge drejer til styrbord og passerer hinanden bagbord mod bagbord.">
+  <defs>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
+    </marker>
+    <g id="baad">
+      <path d="M -15 19 L 15 19 L 15 -4 Q 0 -28 -15 -4 Z" fill="#0e7490"/>
+      <circle cx="0" cy="7" r="4" fill="#e0f2f7"/>
+    </g>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+
+  <!-- Oprindelig kollisionskurs -->
+  <line x1="300" y1="130" x2="300" y2="270" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.5"/>
+  <circle cx="300" cy="200" r="12" fill="#dc2626"/>
+  <text x="300" y="205" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">!</text>
+
+  <!-- Manøvre-buer til styrbord -->
+  <path d="M 312 288 Q 366 246 410 226" fill="none" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#pil)"/>
+  <path d="M 288 112 Q 234 154 190 174" fill="none" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#pil)"/>
+
+  <!-- Bådene, let drejet mod styrbord -->
+  <use href="#baad" transform="translate(300 300) rotate(18)"/>
+  <use href="#baad" transform="translate(300 100) rotate(198)"/>
+
+  <g fill="#0f3b4c" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="435" y="222">styrbord</text>
+    <text x="165" y="178">styrbord</text>
+  </g>
+  <text x="300" y="378" text-anchor="middle" fill="#0f3b4c" font-size="15" font-weight="800">Begge drejer til styrbord — pas hinanden bagbord mod bagbord</text>
+</svg>
