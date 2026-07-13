@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Fortøjning langs kaj med fire trosser: fortrosse, agtertrosse, forspring og agterspring">
+  <defs>
+    <g id="baad">
+      <path d="M -70 -22 L 30 -22 Q 76 0 30 22 L -70 22 Q -84 0 -70 -22 Z" fill="#0e7490"/>
+      <circle cx="-40" cy="0" r="6" fill="#e0f2f7"/>
+    </g>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <rect y="300" width="600" height="100" fill="#94a3b8"/>
+  <text x="16" y="360" fill="#334155" font-size="15" font-weight="700">KAJ</text>
+  <g fill="#334155">
+    <circle cx="90" cy="308" r="7"/>
+    <circle cx="230" cy="308" r="7"/>
+    <circle cx="370" cy="308" r="7"/>
+    <circle cx="510" cy="308" r="7"/>
+  </g>
+  <use href="#baad" transform="translate(300 240) rotate(0)"/>
+  <g stroke="#0f3b4c" stroke-width="2.5" fill="none">
+    <path d="M 372 236 L 510 306"/>
+    <path d="M 228 236 L 90 306"/>
+    <path d="M 360 250 L 230 306"/>
+    <path d="M 240 250 L 370 306"/>
+  </g>
+  <g fill="#0f3b4c" font-size="13" font-weight="700">
+    <text x="455" y="262">Fortrosse</text>
+    <text x="95" y="262">Agtertrosse</text>
+    <text x="255" y="292">Forspring</text>
+    <text x="300" y="272">Agterspring</text>
+  </g>
+  <text x="150" y="60" fill="#0f3b4c" font-size="14" font-weight="700">Spring hindrer båden i at glide frem og tilbage</text>
+</svg>

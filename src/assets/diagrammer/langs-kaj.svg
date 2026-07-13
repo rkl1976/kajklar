@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Anløb langs kaj i tre trin: skråt ind, sæt farten ned, ret op og glid ind">
+  <defs>
+    <g id="baad">
+      <path d="M -35 -13 L 15 -13 Q 38 0 15 13 L -35 13 Q -42 0 -35 -13 Z" fill="#0e7490"/>
+      <circle cx="-18" cy="0" r="4" fill="#e0f2f7"/>
+    </g>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <rect y="330" width="600" height="70" fill="#94a3b8"/>
+  <text x="16" y="372" fill="#334155" font-size="15" font-weight="700">KAJ</text>
+  <path d="M 150 130 Q 300 210 430 296" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#pil)"/>
+  <use href="#baad" transform="translate(120 112) rotate(33)" opacity="0.35"/>
+  <use href="#baad" transform="translate(285 205) rotate(28)" opacity="0.6"/>
+  <use href="#baad" transform="translate(470 302) rotate(2)"/>
+  <g fill="#0f3b4c" font-size="14" font-weight="700">
+    <text x="30" y="70">1. Styr mod kajen i ca. 30 grader</text>
+    <text x="220" y="165">2. Sæt farten ned — kun styrefart</text>
+    <text x="300" y="255">3. Ret op, og lad båden glide ind</text>
+  </g>
+</svg>
