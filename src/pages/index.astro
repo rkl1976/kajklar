@@ -4,27 +4,18 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { KATEGORIER, type Kategori } from '../lib/kategorier';
 import { guideUrl } from '../lib/guides';
-import { KATEGORI_FOTOS, HAVNE_FOTO } from '../lib/kategoriFotos';
+import { KATEGORI_FOTOS } from '../lib/kategoriFotos';
 import heroBillede from '../assets/fotos/hero-badebro.jpg';
 
 const guides = await getCollection('guides');
 const fremhaevet = guides.find((g) => g.id === 'havnemanoevrer/laegge-til-i-sidevind')
   ?? [...guides].sort((a, b) => a.data.raekkefoelge - b.data.raekkefoelge)[0];
 
-const omraader = [
-  ...(Object.entries(KATEGORIER) as [Kategori, (typeof KATEGORIER)[Kategori]][]).map(([slug, info]) => ({
-    href: `/${slug}/`,
-    foto: KATEGORI_FOTOS[slug],
-    ...info,
-  })),
-  {
-    href: '/havne/',
-    titel: 'Havne',
-    emoji: '🏘️',
-    beskrivelse: 'Havneguide til Limfjorden — dybder, faciliteter og indsejling.',
-    foto: HAVNE_FOTO,
-  },
-];
+const omraader = (Object.entries(KATEGORIER) as [Kategori, (typeof KATEGORIER)[Kategori]][]).map(([slug, info]) => ({
+  href: `/${slug}/`,
+  foto: KATEGORI_FOTOS[slug],
+  ...info,
+}));
 ---
 <BaseLayout title="Forside" description="Guides, havnemanøvrer, regler og havneinfo for nye motorbådssejlere i Limfjorden." bred>
   <section class="relative flex min-h-[72vh] items-end overflow-hidden">
@@ -47,17 +38,17 @@ const omraader = [
           class="rounded-full bg-rav-500 px-6 py-3 font-semibold text-fjord-900 shadow-lg shadow-rav-500/25 transition hover:bg-rav-600 hover:text-white">
           Kom i gang →
         </a>
-        <a href="/havne/"
+        <a href="/regler/"
           class="rounded-full border border-white/40 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">
-          Udforsk havnene
+          Læs reglerne
         </a>
       </div>
     </div>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-14" aria-label="Indholdsområder">
-    <h2 class="font-display text-2xl font-black sm:text-3xl">Fire veje til at blive KajKlar</h2>
-    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <h2 class="font-display text-2xl font-black sm:text-3xl">Tre veje til at blive KajKlar</h2>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {omraader.map((omraade) => (
         <a href={omraade.href}
           class="group overflow-hidden rounded-2xl border border-fjord-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-700 dark:bg-slate-800">
