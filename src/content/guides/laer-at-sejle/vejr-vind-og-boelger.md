@@ -34,11 +34,31 @@ Når strøm og vind står imod hinanden, bliver bølgerne brattere og mere ujæv
 
 Det gælder blandt andet ved smalle passager og løb, hvor vandet presses sammen og strømmen tiltager — hold ekstra opmærksomhed, når du sejler gennem den slags steder i blæsevejr.
 
-## Hvor du finder varsler
+## Hvor du finder de bedste vejrinformationer
 
-Brug DMI's app eller hjemmeside til den generelle vejrudsigt, og kig specifikt efter **farvandsudsigterne**, som er målrettet søfarende og dækker vind, sigt og bølgeforhold for de danske farvande. Det er værd at tjekke udsigten både aftenen før og igen lige inden afgang, da forhold på vandet kan ændre sig hurtigere end på land.
+Den bedste kilde er ikke ét sted, men en kombination af prognoser og virkelighed:
 
-Mange lokale havne og sejlklubber har desuden opsat vindmålere, hvis værdier du kan finde online — de giver et godt, lokalt supplement til den generelle udsigt, især i et farvand med så mange lokale variationer som Limfjorden.
+**De officielle kilder:**
+
+- **[DMI](https://www.dmi.dk)** (hjemmeside og app) er grundstenen — men kig efter **farvandsudsigterne** og **varslerne** (kuling, forhøjet vandstand), ikke byvejret. Farvandsudsigten taler i middelvind *og* vindstød og dækker sigt og bølgeforhold.
+- **[FCOO](https://www.fcoo.dk)** — Forsvarets oceanografiske center — er en undervurderet perle: kort over vind, bølger, **strøm** og vandstand time for time. Strømmen i Limfjorden står ingen andre steder så tydeligt.
+- **DMI's vandstandsmålinger** er vigtige netop i Limfjorden, hvor vandstanden er vinddrevet: hård vestenvind presser vand *ind* i fjorden, østenvind trækker det ud — det kan flytte vandstanden en halv meter og har betydning for både indsejlingsdybder og din fortøjning.
+
+**Sejler-apps til prognoser:**
+
+- **[Windy](https://www.windy.com)** viser flere vejrmodeller side om side. Trick: er modellerne *enige*, kan du stole på prognosen — er de uenige, så planlæg konservativt.
+- **[YR.no](https://www.yr.no)** er præcis time for time, og **[Windfinder](https://www.windfinder.com)** giver spotprognoser for konkrete havne med fokus på vindstød.
+
+**Virkeligheden (det, prognoserne ikke fanger):**
+
+- DMI's **aktuelle observationer** fra målestationer viser, hvad vinden *faktisk* gør — passer observationen ikke med prognosen, så tro på observationen.
+- Mange Limfjordshavne har **webcams** og lokale vindmålere — ti sekunders kig på flag og vandoverflade slår enhver model.
+
+## Din vejr-rutine
+
+1. **Aftenen før:** DMI's farvandsudsigt og varsler — det er her, du beslutter go eller no-go.
+2. **Om morgenen:** Windy/YR for timing (hvornår er vinduet bedst), og FCOO hvis strøm eller vandstand betyder noget for din rute.
+3. **Ved afgang:** aktuelle observationer, webcam og flagene i havnen — og en opdateret udsigt, for forhold på vandet ændrer sig hurtigere end på land.
 
 ## Tommelfingerregel: hvide toppe
 
