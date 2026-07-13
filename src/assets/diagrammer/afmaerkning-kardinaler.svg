@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" font-family="system-ui, sans-serif" role="img" aria-label="De fire kardinalafmærkninger, gule og sorte med to sorte kegle-topfigurer: Nord (begge kegler peger op, sort over gul, sejl nord om), Syd (begge kegler peger ned, gul over sort, sejl syd om), Øst (kegler peger væk fra hinanden, sort-gul-sort, sejl øst om) og Vest (kegler peger mod hinanden, gul-sort-gul, sejl vest om)">
+  <rect width="720" height="430" fill="#e8f6fa"/>
+  <rect y="300" width="720" height="130" fill="#bae5ef" opacity="0.55"/>
+
+  <!-- ============ NORD (cx=90) ============ -->
+  <ellipse cx="90" cy="300" rx="40" ry="10" fill="#0e7490" opacity="0.15"/>
+  <line x1="90" y1="200" x2="90" y2="212" stroke="#334155" stroke-width="3"/>
+  <path d="M 90 150 L 74 174 L 106 174 Z" fill="#1f2937"/>
+  <path d="M 90 176 L 74 200 L 106 200 Z" fill="#1f2937"/>
+  <rect x="66" y="210" width="48" height="55" fill="#1f2937"/>
+  <rect x="66" y="265" width="48" height="55" fill="#facc15"/>
+  <rect x="66" y="210" width="48" height="110" rx="7" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="352" text-anchor="middle" fill="#0f3b4c" font-size="17" font-weight="800">NORD</text>
+  <text x="90" y="374" text-anchor="middle" fill="#475569" font-size="13">keglerne peger op</text>
+  <text x="90" y="392" text-anchor="middle" fill="#475569" font-size="13">sejl nord om faren</text>
+
+  <!-- ============ SYD (cx=270) ============ -->
+  <ellipse cx="270" cy="300" rx="40" ry="10" fill="#0e7490" opacity="0.15"/>
+  <line x1="270" y1="200" x2="270" y2="212" stroke="#334155" stroke-width="3"/>
+  <path d="M 254 150 L 286 150 L 270 174 Z" fill="#1f2937"/>
+  <path d="M 254 176 L 286 176 L 270 200 Z" fill="#1f2937"/>
+  <rect x="246" y="210" width="48" height="55" fill="#facc15"/>
+  <rect x="246" y="265" width="48" height="55" fill="#1f2937"/>
+  <rect x="246" y="210" width="48" height="110" rx="7" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="270" y="352" text-anchor="middle" fill="#0f3b4c" font-size="17" font-weight="800">SYD</text>
+  <text x="270" y="374" text-anchor="middle" fill="#475569" font-size="13">keglerne peger ned</text>
+  <text x="270" y="392" text-anchor="middle" fill="#475569" font-size="13">sejl syd om faren</text>
+
+  <!-- ============ ØST (cx=450) ============ -->
+  <ellipse cx="450" cy="300" rx="40" ry="10" fill="#0e7490" opacity="0.15"/>
+  <line x1="450" y1="200" x2="450" y2="212" stroke="#334155" stroke-width="3"/>
+  <path d="M 450 150 L 434 174 L 466 174 Z" fill="#1f2937"/>
+  <path d="M 434 176 L 466 176 L 450 200 Z" fill="#1f2937"/>
+  <rect x="426" y="210" width="48" height="37" fill="#1f2937"/>
+  <rect x="426" y="247" width="48" height="36" fill="#facc15"/>
+  <rect x="426" y="283" width="48" height="37" fill="#1f2937"/>
+  <rect x="426" y="210" width="48" height="110" rx="7" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="450" y="352" text-anchor="middle" fill="#0f3b4c" font-size="17" font-weight="800">ØST</text>
+  <text x="450" y="374" text-anchor="middle" fill="#475569" font-size="13">keglerne peger væk</text>
+  <text x="450" y="392" text-anchor="middle" fill="#475569" font-size="13">sejl øst om faren</text>
+
+  <!-- ============ VEST (cx=630) ============ -->
+  <ellipse cx="630" cy="300" rx="40" ry="10" fill="#0e7490" opacity="0.15"/>
+  <line x1="630" y1="200" x2="630" y2="212" stroke="#334155" stroke-width="3"/>
+  <path d="M 614 150 L 646 150 L 630 174 Z" fill="#1f2937"/>
+  <path d="M 630 176 L 614 200 L 646 200 Z" fill="#1f2937"/>
+  <rect x="606" y="210" width="48" height="37" fill="#facc15"/>
+  <rect x="606" y="247" width="48" height="36" fill="#1f2937"/>
+  <rect x="606" y="283" width="48" height="37" fill="#facc15"/>
+  <rect x="606" y="210" width="48" height="110" rx="7" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="630" y="352" text-anchor="middle" fill="#0f3b4c" font-size="17" font-weight="800">VEST</text>
+  <text x="630" y="374" text-anchor="middle" fill="#475569" font-size="13">keglerne peger mod hinanden</text>
+  <text x="630" y="392" text-anchor="middle" fill="#475569" font-size="13">sejl vest om faren</text>
+</svg>
