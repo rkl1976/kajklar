@@ -8,13 +8,15 @@ interface Props {
   title: string;
   description: string;
   bred?: boolean;
+  ogType?: string;
 }
 
-const { title, description, bred = false } = Astro.props;
+const { title, description, bred = false, ogType = 'website' } = Astro.props;
 const nav = [
   { href: withBase('/laer-at-sejle/'), label: 'Lær at sejle' },
   { href: withBase('/havnemanoevrer/'), label: 'Havnemanøvrer' },
   { href: withBase('/regler/'), label: 'Regler' },
+  { href: withBase('/logbog/'), label: 'Logbog' },
 ];
 ---
 <!doctype html>
@@ -30,7 +32,7 @@ const nav = [
     <link rel="sitemap" href={withBase('/sitemap-index.xml')} />
     <meta property="og:title" content={`${title} · KajKlar`} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <script is:inline>
       const theme = localStorage.getItem('theme')
         ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');

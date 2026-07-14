@@ -24,4 +24,17 @@ const havne = defineCollection({
   }),
 });
 
-export const collections = { guides, havne };
+const logbog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/logbog' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().max(160),
+      dato: z.coerce.date(),
+      forfatter: z.string().default('KajKlar'),
+      billede: image().optional(),
+      billedeAlt: z.string().optional(),
+    }),
+});
+
+export const collections = { guides, havne, logbog };

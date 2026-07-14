@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+
+const indlaeg = (await getCollection('logbog')).sort(
+  (a, b) => b.data.dato.getTime() - a.data.dato.getTime(),
+);
+const datoFmt = new Intl.DateTimeFormat('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<BaseLayout title="Logbog" description="Historier fra det virkelige liv som ny bådejer — små sejre, bommerter og lærepenge fra livet på Limfjorden.">
+  <header class="max-w-2xl">
+    <p class="text-xs font-bold uppercase tracking-[0.25em] text-rav-600 dark:text-rav-500">📖 Logbog</p>
+    <h1 class="mt-3 font-display text-4xl font-black sm:text-5xl">Historier fra vandet</h1>
+    <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+      Fortællinger fra det virkelige liv som nybegynder med båd — de små sejre, bommerterne og alt det, ingen manual fortæller dig.
+    </p>
+  </header>
+
+  <ol class="mt-10 space-y-5">
+    {indlaeg.map((post) => (
+      <li>
+        <a href={withBase(`/logbog/${post.id}/`)}
+          class="group flex flex-col gap-4 overflow-hidden rounded-2xl border border-fjord-100 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-fjord-500 hover:shadow-md sm:flex-row dark:border-slate-700 dark:bg-slate-800 dark:hover:border-fjord-200">
+          {post.data.billede && (
+            <div class="relative h-44 shrink-0 overflow-hidden sm:h-auto sm:w-56">
+              <Image src={post.data.billede} alt={post.data.billedeAlt ?? ''}
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                widths={[400, 640]} sizes="(min-width: 640px) 224px, 100vw" />
+            </div>
+          )}
+          <div class="p-5">
+            <p class="text-xs font-bold uppercase tracking-[0.15em] text-rav-600 dark:text-rav-500">
+              <time datetime={post.data.dato.toISOString()}>{datoFmt.format(post.data.dato)}</time>
+            </p>
+            <h2 class="mt-1.5 font-display text-xl font-bold">{post.data.title}</h2>
+            <p class="mt-1.5 text-sm text-slate-600 dark:text-slate-400">{post.data.description}</p>
+            <p class="mt-3 text-xs text-slate-500 dark:text-slate-500">Af {post.data.forfatter}</p>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ol>
+</BaseLayout>
