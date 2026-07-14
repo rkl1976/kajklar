@@ -1,7 +1,7 @@
 ---
 title: "Velkommen ombord — det her er vores logbog"
 description: "Logbogen er KajKlars fortællinger fra det virkelige liv som ny bådejer — de små sejre, bommerterne og alt det, ingen manual fortæller dig."
-dato: 2026-07-14
+dato: 2026-07-13
 forfatter: "KajKlar"
 ---
 
