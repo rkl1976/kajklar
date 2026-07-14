@@ -17,7 +17,7 @@
   <use href="#baad" transform="translate(470 302) rotate(2)"/>
   <g fill="#0f3b4c" font-size="14" font-weight="700">
     <text x="30" y="70">1. Styr mod kajen i ca. 30 grader</text>
-    <text x="220" y="165">2. Sæt farten ned — kun styrefart</text>
+    <text x="220" y="165">2. Sæt farten ned, kun styrefart</text>
     <text x="300" y="255">3. Ret op, og lad båden glide ind</text>
   </g>
 </svg>

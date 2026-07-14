@@ -23,7 +23,7 @@ const kortUrl = `https://www.openstreetmap.org/?mlat=${position.lat}&mlon=${posi
         {vhf && <div><dt class="inline font-semibold">VHF:</dt> <dd class="inline">{vhf}</dd></div>}
         <div>
           <dt class="inline font-semibold">Position:</dt>
-          <dd class="inline">{position.lat.toFixed(3)}° N, {position.lng.toFixed(3)}° Ø — <a class="underline" href={kortUrl} rel="noopener">se kort</a></dd>
+          <dd class="inline">{position.lat.toFixed(3)}° N, {position.lng.toFixed(3)}° Ø, <a class="underline" href={kortUrl} rel="noopener">se kort</a></dd>
         </div>
       </dl>
     </div>

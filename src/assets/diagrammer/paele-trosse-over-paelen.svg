@@ -17,7 +17,7 @@
   <use href="#baad" transform="translate(300 210) rotate(90)"/>
   <path d="M 300 258 L 300 302" fill="none" stroke="#0e7490" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#pil)"/>
   <g fill="#0f3b4c" font-size="14" font-weight="700">
-    <text x="36" y="120">Øjet over pælen — ikke et knob</text>
+    <text x="36" y="120">Øjet over pælen, ikke et knob</text>
     <text x="330" y="150">Trossen løber frit ud,</text>
     <text x="330" y="170">mens båden glider frem</text>
     <text x="326" y="292">Boven fortsætter mod kaj</text>

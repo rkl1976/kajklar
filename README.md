@@ -1,6 +1,6 @@
 # ⚓ KajKlar
 
-Dansk website for nye motorbådssejlere — guides, havnemanøvrer, søvejsregler og
+Dansk website for nye motorbådssejlere, guides, havnemanøvrer, søvejsregler og
 havneguide med fokus på Limfjorden.
 
 ## Udvikling
@@ -15,11 +15,11 @@ npm run preview  # se produktion-buildet lokalt
 
 ## Struktur
 
-- `src/content/guides/` — guides i markdown (kategorier: laer-at-sejle, havnemanoevrer, regler)
-- `src/content/havne/` — havnesider med struktureret frontmatter
-- `src/content.config.ts` — Zod-skemaer; buildet fejler ved ugyldig frontmatter
-- `src/assets/diagrammer/` — SVG-diagrammer til manøvre-guides
-- `docs/superpowers/specs/` — designdokument
+- `src/content/guides/`, guides i markdown (kategorier: laer-at-sejle, havnemanoevrer, regler)
+- `src/content/havne/`, havnesider med struktureret frontmatter
+- `src/content.config.ts`, Zod-skemaer; buildet fejler ved ugyldig frontmatter
+- `src/assets/diagrammer/`, SVG-diagrammer til manøvre-guides
+- `docs/superpowers/specs/`, designdokument
 
 ## Deployment
 

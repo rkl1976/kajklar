@@ -21,7 +21,7 @@
   <use href="#baad" transform="translate(430 165) rotate(0)" opacity="0.5"/>
   <use href="#baad" transform="translate(430 300) rotate(0)"/>
   <g fill="#0f3b4c" font-size="14" font-weight="700">
-    <text x="330" y="140">1. Stop op parallelt, 1–2 meter fra kaj</text>
+    <text x="330" y="140">1. Stop op parallelt, 1-2 meter fra kaj</text>
     <text x="130" y="240">2. Lad vinden skubbe båden blidt ind</text>
   </g>
 </svg>

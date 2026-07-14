@@ -46,7 +46,7 @@
     <path d="M 522 217 L 538 217 L 530 200 Z" fill="#16a34a"/>
     <circle cx="530" cy="241" r="3" fill="#14532d"/>
   </g>
-  <text x="60" y="330" fill="#14532d" font-size="12" font-weight="700">Grøn = om styrbord (i afmærkningsretningen) — numrene tæller ned mod øst her</text>
+  <text x="60" y="330" fill="#14532d" font-size="12" font-weight="700">Grøn = om styrbord (i afmærkningsretningen), numrene tæller ned mod øst her</text>
 
-  <text x="20" y="392" fill="#1f2937" font-size="11" font-weight="700">Stiliseret udsnit inspireret af renden ved Aalborg — ikke til navigation</text>
+  <text x="20" y="392" fill="#1f2937" font-size="11" font-weight="700">Stiliseret udsnit inspireret af renden ved Aalborg, ikke til navigation</text>
 </svg>
