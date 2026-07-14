@@ -14,6 +14,17 @@ Alle danske lystbådehavne er omfattet af det samme **standardreglement**, og de
 
 Priser, betalingsfrister og tidsgrænser står derimod **ikke** i standardreglementet — de fastsættes af hver enkelt havn i dens eget reglement og takstblad. Derfor er svaret på næsten alle detailspørgsmål: tjek havnens hjemmeside eller spørg havnefogeden.
 
+### Sådan melder du dig i praksis
+
+At melde ankomst og at betale havnepenge er i dag næsten altid ét og samme selvbetjente trin. Fortøj sikkert først — meld dig så, via det system havnen nu har:
+
+1. **App eller QR-kode** på broen/havnekontoret: registrér bådnavn, længde og pladsnummer, og betal — dét er din ankomstmelding. Nogle havne kan endda bookes hjemmefra via havneguide.dk.
+2. **Betalingsautomat** på havnen: indtast plads og længde, betal med kort.
+3. **Havnekontoret**: i bemandede havne går du op med bådnavn, hjemhavn, længde og antal nætter — og får evt. anvist en anden plads.
+4. **Kuvertsystemet** i små havne: udfyld kuverten, læg betalingen i postkassen, og sæt kvitteringsdelen synligt på båden.
+
+Kvitteringen skal typisk sidde **synligt** (billet eller klistermærke), så havnefogedens runde kan se, du har betalt. Er kontoret lukket, og findes der hverken app eller automat: læg en besked med navn, bådnavn og telefonnummer i havnens postkasse, og betal næste morgen — så har du opfyldt din pligt.
+
 ## Grøn/rød-skiltene
 
 De fleste gæstepladser i Danmark styres af det enkle skiltesystem, som brancheforeningen FLID står bag: **grøn = pladsen er ledig, og du er velkommen. Rød = optaget — ejeren er hjemme eller ventes tilbage.** Nogle havne supplerer med et "ledig til"-skilt med dato, så du kan se, hvor længe du kan blive liggende.
