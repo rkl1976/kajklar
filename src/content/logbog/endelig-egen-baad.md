@@ -3,6 +3,8 @@ title: "Endelig egen båd — drømmen bliver til virkelighed"
 description: "Efter mange års drøm har vi købt vores første båd — en Quicksilver 505 Activ Cabin. I dag cyklede vi ud til sejlklubben for at se vores nye plads."
 dato: 2026-07-14
 forfatter: "René"
+billede: ../../assets/fotos/sejlklub-aalborg-luftfoto.jpg
+billedeAlt: "Luftfoto af lystbådehavnen i Aalborg med rækker af bådpladser langs flydebroerne og moler ud mod Limfjorden"
 ---
 
 Der er drømme, man går og bærer rundt på i årevis. Sådan en har jeg haft længe: en båd. Ikke noget stort og prangende — bare vores egen båd, hvor vi selv bestemmer kursen, kan lægge til ved en strand, spise frokost på vandet og komme hjem med saltvand i håret og en god historie i bagagen.
