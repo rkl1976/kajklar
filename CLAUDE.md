@@ -66,6 +66,29 @@ sat af inline-script i `BaseLayout.astro` (localStorage + `prefers-color-scheme`
 
 ## Deployment
 
-`dist/` er statisk og kan hostes på GitHub Pages, Cloudflare Pages eller Azure
-Static Web Apps. Ved domæneskift skal `site` opdateres i `astro.config.mjs`
-(driver canonical-URL'er og sitemap) samt i `public/robots.txt`.
+Sitet deployes til **GitHub Pages** via GitHub Actions
+(`.github/workflows/deploy.yml`, bygger med `withastro/action`). Workflowen
+kører automatisk ved hvert push til `feature/til-kaj-v1` (repoets default- og
+de-facto main-branch) og kan også startes manuelt (`workflow_dispatch`).
+Pages er sat op med "GitHub Actions" som kilde — repoet er offentligt, hvilket
+er et krav for Pages på gratis-planen.
+
+**Live:** https://rkl1976.github.io/kajklar/
+
+Fordi det er et **projektsite** (understi, ikke eget domæne endnu), er
+`base: '/kajklar'` sat i `astro.config.mjs`, og `site` peger på
+`https://rkl1976.github.io`. Astro tilføjer **ikke** automatisk base-stien til
+hardkodede `href="/..."` — derfor skal alle interne links, favicon og sitemap
+bygges med `withBase()` fra `src/lib/url.ts`. `guideUrl` gør dette allerede.
+Assets refereret via Astros pipeline (`<Image>`, markdown-billeder) får base
+automatisk. Verificér efter link-ændringer, at buildet ikke producerer rene
+rod-links uden `/kajklar/`-præfiks.
+
+**Skift til eget domæne (kajklar.dk):** sæt `site: 'https://kajklar.dk'` og
+fjern `base` (eller sæt `base: '/'`) i `astro.config.mjs`, opdatér
+`public/robots.txt`, og tilføj `public/CNAME` med `kajklar.dk` plus DNS mod
+GitHub Pages. `withBase()` håndterer `base: '/'` (returnerer links uændret), så
+der kræves ingen link-oprydning. `site` driver canonical-URL'er og sitemap.
+
+`dist/` er ren statik og kan alternativt hostes på Cloudflare Pages eller Azure
+Static Web Apps (begge serverer fra roden, så `base` bør fjernes der).
