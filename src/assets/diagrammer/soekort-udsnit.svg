@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Stiliseret søkort-udsnit af en sejlrende: en linje af grønne styrbordsmærker med numre og lyskarakterer, et enkelt rødt bagbordsmærke, og en pil der viser afmærkningsretningen">
+  <defs>
+    <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#e8f6fa"/>
+  <path d="M 0 0 H 600 V 70 Q 480 92 360 80 Q 220 66 90 86 Q 40 92 0 84 Z" fill="#94a3b8"/>
+  <path d="M 0 400 H 600 V 330 Q 470 312 340 322 Q 200 334 80 318 L 0 326 Z" fill="#94a3b8"/>
+  <text x="20" y="40" fill="#334155" font-size="13" font-weight="700">NØRRESUNDBY-SIDEN</text>
+  <text x="400" y="374" fill="#334155" font-size="13" font-weight="700">AALBORG-SIDEN</text>
+
+  <!-- Afmærkningsretning -->
+  <line x1="80" y1="160" x2="520" y2="160" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="8 7" marker-end="url(#pil)"/>
+  <text x="180" y="145" fill="#b45309" font-size="13" font-weight="700">Afmærkningsretning (her: mod øst)</text>
+
+  <!-- Rødt bagbordsmærke (nord for renden) -->
+  <line x1="150" y1="128" x2="150" y2="105" stroke="#dc2626" stroke-width="3"/>
+  <rect x="142" y="90" width="16" height="15" fill="#dc2626"/>
+  <circle cx="150" cy="129" r="3" fill="#7f1d1d"/>
+  <text x="168" y="102" fill="#991b1b" font-size="12" font-weight="700">Rød = om bagbord</text>
+  <text x="168" y="117" fill="#991b1b" font-size="12" font-weight="700">(i afmærkningsretningen)</text>
+
+  <!-- Grønne styrbordsmærker (syd for renden) -->
+  <g>
+    <line x1="140" y1="248" x2="140" y2="225" stroke="#16a34a" stroke-width="3"/>
+    <path d="M 132 225 L 148 225 L 140 208 Z" fill="#16a34a"/>
+    <circle cx="140" cy="249" r="3" fill="#14532d"/>
+  </g>
+  <g>
+    <line x1="280" y1="252" x2="280" y2="229" stroke="#16a34a" stroke-width="3"/>
+    <path d="M 272 229 L 288 229 L 280 212 Z" fill="#16a34a"/>
+    <circle cx="280" cy="253" r="3" fill="#14532d"/>
+    <text x="262" y="285" fill="#14532d" font-size="12" font-weight="700">No. 25</text>
+    <text x="262" y="300" fill="#14532d" font-size="12" font-weight="700">Fl(2)G.5s</text>
+  </g>
+  <g>
+    <line x1="420" y1="248" x2="420" y2="225" stroke="#16a34a" stroke-width="3"/>
+    <path d="M 412 225 L 428 225 L 420 208 Z" fill="#16a34a"/>
+    <circle cx="420" cy="249" r="3" fill="#14532d"/>
+    <text x="402" y="281" fill="#14532d" font-size="12" font-weight="700">No. 23</text>
+    <text x="402" y="296" fill="#14532d" font-size="12" font-weight="700">Fl(3)G.10s</text>
+  </g>
+  <g>
+    <line x1="530" y1="240" x2="530" y2="217" stroke="#16a34a" stroke-width="3"/>
+    <path d="M 522 217 L 538 217 L 530 200 Z" fill="#16a34a"/>
+    <circle cx="530" cy="241" r="3" fill="#14532d"/>
+  </g>
+  <text x="60" y="330" fill="#14532d" font-size="12" font-weight="700">Grøn = om styrbord (i afmærkningsretningen) — numrene tæller ned mod øst her</text>
+
+  <text x="20" y="392" fill="#1f2937" font-size="11" font-weight="700">Stiliseret udsnit inspireret af renden ved Aalborg — ikke til navigation</text>
+</svg>

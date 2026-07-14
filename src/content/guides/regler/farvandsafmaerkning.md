@@ -70,6 +70,26 @@ Et overrettemærke består af to båker: en lav forreste og en høj bageste, sat
 
 Om natten er mange overrettemærker forsynet med lys (en *fyrlinje*), så du kan følge linjen i mørke — se guiden om lanterner og sejlads i mørke. Overrettemærker er især værd at kende i smalle indsejlinger, hvor der ikke er plads til at famle sig frem efter enkelte bøjer.
 
+## Sådan står det på søkortet — numre og lyskarakterer
+
+På søkortet har afmærkningen to påskrifter, der er guld værd, når du først kan læse dem. Her er et stiliseret udsnit, som det kunne se ud i renden ved Aalborg:
+
+![Diagram: stiliseret søkort-udsnit med en linje af grønne styrbordsmærker med numre og lyskarakterer (No. 25 Fl(2)G.5s), et rødt bagbordsmærke og en pil for afmærkningsretningen](../../../assets/diagrammer/soekort-udsnit.svg)
+
+**Numrene** (fx *No. 23* og *No. 25*) er afmærkningens fortløbende numre i sejlløbet. De gør det nemt at stedfæste sig entydigt: "jeg ligger ved bøje 25" er præcist — både i et kald til brovagten og i en nødsituation.
+
+**Lyskarakteren** (fx *Fl(2)G.5s*) er bøjens fingeraftryk i mørke. Den læses stykke for stykke: *Fl* = blink, *(2)* = to blink i en gruppe, *G* = grønt lys, *5s* = mønstret gentages hvert 5. sekund. Om natten identificerer du altså en bøje ved at tælle blink og tage tid på gentagelsen. De mest almindelige forkortelser:
+
+| Notation | Betydning |
+|---|---|
+| F.G / F.R | Fast (konstant) grønt/rødt lys |
+| Fl.G.3s | Ét grønt blink, gentaget hvert 3. sekund |
+| Fl(2)G.5s | Gruppe på to grønne blink hvert 5. sekund |
+| Q | Hurtigblink — omkring ét blink i sekundet |
+| Iso | Isofase — lige lang tid tændt og slukket |
+
+Se også guiden om lanterner og sejlads i mørke, hvor lyskaraktererne for alvor kommer i spil.
+
 ## Hvad gør du, hvis du er i tvivl?
 
 Er du usikker på, hvad en bøje betyder, eller kan du ikke se den tydeligt: sæt farten markant ned, og hold ekstra udkig. Tjek søkortet igen — de fleste tvivlstilfælde løses ved at se efter, hvilken type mærke det er (form, farve, topfigur), og sammenholde det med kortet. Naviger aldrig "på må og få" i ukendt farvand; hellere en omvej end en grundstødning.
