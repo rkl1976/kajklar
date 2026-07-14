@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { KATEGORIER } from '../../lib/kategorier';
 import { guideSlug, guideUrl } from '../../lib/guides';
+import { withBase } from '../../lib/url';
 
 export async function getStaticPaths() {
   const guides = await getCollection('guides');
@@ -23,7 +24,7 @@ const naeste = index < soeskende.length - 1 ? soeskende[index + 1] : undefined;
 ---
 <BaseLayout title={guide.data.title} description={guide.data.description}>
   <nav class="text-sm" aria-label="Brødkrumme">
-    <a href={`/${guide.data.kategori}/`} class="text-fjord-600 hover:underline dark:text-fjord-200">
+    <a href={withBase(`/${guide.data.kategori}/`)} class="text-fjord-600 hover:underline dark:text-fjord-200">
       ← {info.emoji} {info.titel}
     </a>
   </nav>

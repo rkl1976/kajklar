@@ -2,6 +2,7 @@
 import '@fontsource-variable/fraunces';
 import '@fontsource-variable/instrument-sans';
 import '../styles/global.css';
+import { withBase } from '../lib/url';
 
 interface Props {
   title: string;
@@ -11,9 +12,9 @@ interface Props {
 
 const { title, description, bred = false } = Astro.props;
 const nav = [
-  { href: '/laer-at-sejle/', label: 'Lær at sejle' },
-  { href: '/havnemanoevrer/', label: 'Havnemanøvrer' },
-  { href: '/regler/', label: 'Regler' },
+  { href: withBase('/laer-at-sejle/'), label: 'Lær at sejle' },
+  { href: withBase('/havnemanoevrer/'), label: 'Havnemanøvrer' },
+  { href: withBase('/regler/'), label: 'Regler' },
 ];
 ---
 <!doctype html>
@@ -21,12 +22,12 @@ const nav = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} />
     <title>{title} · KajKlar</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
     <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href={withBase('/sitemap-index.xml')} />
     <meta property="og:title" content={`${title} · KajKlar`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -39,7 +40,7 @@ const nav = [
   <body class="flex min-h-screen flex-col bg-white font-sans text-fjord-900 dark:bg-slate-900 dark:text-slate-100">
     <header class="sticky top-0 z-40 border-b border-fjord-100/70 bg-white/80 backdrop-blur-md dark:border-slate-700/70 dark:bg-slate-900/80">
       <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
-        <a href="/" class="font-display text-xl font-black tracking-tight text-fjord-700 dark:text-fjord-200">⚓ KajKlar</a>
+        <a href={withBase('/')} class="font-display text-xl font-black tracking-tight text-fjord-700 dark:text-fjord-200">⚓ KajKlar</a>
         <nav class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm font-medium" aria-label="Hovedmenu">
           {nav.map((item) => (
             <a href={item.href} class="transition-colors hover:text-fjord-600 dark:hover:text-fjord-200">{item.label}</a>
@@ -66,13 +67,13 @@ const nav = [
             {nav.map((item) => (
               <li><a href={item.href} class="hover:text-fjord-600 hover:underline dark:hover:text-fjord-200">{item.label}</a></li>
             ))}
-            <li><a href="/om/" class="hover:text-fjord-600 hover:underline dark:hover:text-fjord-200">Om sitet</a></li>
+            <li><a href={withBase('/om/')} class="hover:text-fjord-600 hover:underline dark:hover:text-fjord-200">Om sitet</a></li>
           </ul>
         </nav>
         <div class="text-sm text-slate-600 dark:text-slate-400">
           <p class="font-semibold text-fjord-900 dark:text-slate-100">Sejl på den sikre side</p>
           <p class="mt-2">KajKlar vejleder — officielle regler og kilder gælder altid. Du sejler på eget ansvar.</p>
-          <p class="mt-2"><a href="/om/" class="underline hover:text-fjord-600 dark:hover:text-fjord-200">Læs ansvarsfraskrivelsen</a></p>
+          <p class="mt-2"><a href={withBase('/om/')} class="underline hover:text-fjord-600 dark:hover:text-fjord-200">Læs ansvarsfraskrivelsen</a></p>
         </div>
       </div>
     </footer>

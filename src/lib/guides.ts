@@ -1,4 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
+import { withBase } from './url';
 
 export function guideSlug(guide: CollectionEntry<'guides'>): string {
   const sidsteDel = guide.id.split('/').pop();
@@ -7,5 +8,5 @@ export function guideSlug(guide: CollectionEntry<'guides'>): string {
 }
 
 export function guideUrl(guide: CollectionEntry<'guides'>): string {
-  return `/${guide.data.kategori}/${guideSlug(guide)}/`;
+  return withBase(`/${guide.data.kategori}/${guideSlug(guide)}/`);
 }

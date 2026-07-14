@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kajklar.dk/sitemap-index.xml
+Sitemap: https://rkl1976.github.io/kajklar/sitemap-index.xml
