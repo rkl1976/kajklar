@@ -16,7 +16,7 @@ Uanset hvad reglerne siger, gælder én regel over dem alle: du skal gøre, hvad
 
 Før du kan bruge vigereglerne, skal du kunne genkende, hvad det er for en slags fartøj, du møder, for reglerne afhænger af typen. Her er de fire, du oftest støder på i Limfjorden:
 
-![Illustration: fire bådtyper i profil, motorbåd (krydsningsregler gælder), sejlbåd for sejl (du viger), ro-/pagajfartøj (du viger) og et stort fragt-/erhvervsskib (hold dig helt væk)](../../../assets/diagrammer/baadtyper-genkendelse.svg)
+![Foto: fire bådtyper på fjorden, motorbåd (krydsningsregler gælder), sejlbåd for sejl (du viger), kajak (du viger) og et stort fragt-/erhvervsskib (hold dig helt væk)](../../../assets/diagrammer/baadtyper-foto.svg)
 
 - **Motorbåd**, kendes på fri stævn uden sejl og typisk en åben styrepult eller kahyt. Møder du en anden motorbåd, gælder krydsnings- og mødereglerne nedenfor.
 - **Sejlbåd (for sejl)**, høj mast med sejl sat. Så længe motoren *ikke* kører, er det en sejlbåd, og du viger. Kører motoren, tæller den som motorbåd, det kan være svært at se, så hold øje med, om sejlene reelt trækker.
