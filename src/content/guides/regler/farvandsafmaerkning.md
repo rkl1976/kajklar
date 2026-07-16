@@ -50,7 +50,7 @@ Hvor sideafmærkning fortæller "hold dig til den ene side", betyder midtfarvand
 - **Topbetegnelse:** én rød kugle.
 - **Lys (hvis bøjen har lys):** hvidt, typisk et langt blink hvert 10. sekund eller isofase.
 
-![Diagram: midtfarvandsafmærkning med røde/hvide lodrette striber og en rød kugle i toppen, der er sejlbart vand hele vejen rundt, så en båd kan passere den på begge sider](../../../assets/diagrammer/afmaerkning-midtfarvand.svg)
+![Foto: midtfarvandsafmærkning med røde/hvide lodrette striber og en rød kugle i toppen, der er sejlbart vand hele vejen rundt, så en båd kan passere den på begge sider](../../../assets/diagrammer/midtfarvand-foto.svg)
 
 Den bruges til at markere midten af et farvand, begyndelsen på et sejlløb eller havneløb, eller som landkending, når du søger ind mod kysten. Møder du en midtfarvandsbøje i et snævert løb, er det god skik at holde den om bagbord (passere den på din styrbord side), så modgående trafik kan gøre det samme, men tjek altid søkortet for den konkrete strækning.
 
@@ -58,9 +58,11 @@ Den bruges til at markere midten af et farvand, begyndelsen på et sejlløb elle
 
 **Isoleret fare-afmærkning** (sort med en eller flere røde bånd, to sorte kugler i toppen) markerer en lille, afgrænset fare, for eksempel et vrag, som du kan sejle rundt om i alle retninger, blot du holder dig fra selve mærket.
 
-![Diagram: isoleret fare-afmærkning (sort med rødt bånd og to sorte kugler i toppen, sejl udenom hele vejen rundt) ved siden af specialafmærkning (gul med gult kryds, markerer badezone, kabel, ankerforbud m.m.)](../../../assets/diagrammer/afmaerkning-fare-special.svg)
+![Foto: isoleret fare-afmærkning, sort med ét rødt bånd og to sorte kugler i toppen, sejl udenom hele vejen rundt](../../../assets/diagrammer/isoleret-fare-foto.svg)
 
 **Specialafmærkning** er gul og bruges til alt muligt, der ikke handler om sejladssikkerhed i sig selv: badezoner, ankerforbudsområder, kabler og rørledninger, forskningsbøjer eller afgrænsning af militærområder. Den gule farve betyder "vær opmærksom", betydningen af den konkrete bøje står typisk beskrevet i søkortet eller i "Efterretninger for Søfarende".
+
+![Foto: specialafmærkning, helt gul med et gult kryds (X) i toppen, markerer badezone, kabel, ankerforbud m.m.](../../../assets/diagrammer/special-foto.svg)
 
 ## Badezoner
 
