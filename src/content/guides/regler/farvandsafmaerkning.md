@@ -74,7 +74,7 @@ Ikke al afmærkning flyder. **Båker** er *fast* afmærkning, figurer på pæle,
 
 Et overrettemærke består af to båker: en lav forreste og en høj bageste, sat op efter hinanden. Når du ser dem stå **lige over hinanden, "i ét"**, sejler du på den sikre linje ind gennem løbet. Står de forskudt ved siden af hinanden, er du ude af kurs: drej roligt, indtil den bageste båke står præcis over den forreste igen.
 
-![Diagram: to faste båker på land danner et overrettemærke, til venstre står de forskudt, så båden er ude af kurs, og til højre står de lige over hinanden i ét, så båden følger den sikre linje ind](../../../assets/diagrammer/afmaerkning-baaker.svg)
+![Foto: to faste båker danner et overrettemærke, til venstre står de forskudt, så båden er ude af kurs, og til højre står de lige over hinanden i ét, så båden følger den sikre linje ind](../../../assets/diagrammer/baaker-foto.svg)
 
 Om natten er mange overrettemærker forsynet med lys (en *fyrlinje*), så du kan følge linjen i mørke, se guiden om lanterner og sejlads i mørke. Overrettemærker er især værd at kende i smalle indsejlinger, hvor der ikke er plads til at famle sig frem efter enkelte bøjer.
 
