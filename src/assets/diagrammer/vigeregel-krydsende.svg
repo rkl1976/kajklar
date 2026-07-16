@@ -1,5 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="system-ui, sans-serif" role="img" aria-label="Krydsende kurser: din motorbåd har den anden båd om styrbord (kommende fra højre). Du har vigepligt og drejer bagom den andens agterstavn, mens den anden båd står på.">
   <defs>
+    <linearGradient id="vand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef8fb"/>
+      <stop offset="1" stop-color="#d3ecf3"/>
+    </linearGradient>
+    <clipPath id="kort"><rect width="600" height="400" rx="18"/></clipPath>
+    <filter id="skygge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f3b4c" flood-opacity="0.22"/>
+    </filter>
     <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
     </marker>
@@ -8,31 +16,33 @@
     </marker>
     <g id="baad">
       <path d="M -15 19 L 15 19 L 15 -4 Q 0 -28 -15 -4 Z" fill="#0e7490"/>
-      <circle cx="0" cy="7" r="4" fill="#e0f2f7"/>
+      <circle cx="0" cy="0" r="4" fill="#e0f2f7"/>
     </g>
     <g id="baad2">
       <path d="M -15 19 L 15 19 L 15 -4 Q 0 -28 -15 -4 Z" fill="#475569"/>
-      <circle cx="0" cy="7" r="4" fill="#e0f2f7"/>
+      <circle cx="0" cy="0" r="4" fill="#e0f2f7"/>
     </g>
   </defs>
-  <rect width="600" height="400" fill="#e8f6fa"/>
 
-  <!-- Den anden båd (står på) kommer fra højre og sejler mod venstre -->
-  <line x1="410" y1="155" x2="170" y2="155" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#pilg)"/>
-  <use href="#baad2" transform="translate(440 155) rotate(270)"/>
+  <g clip-path="url(#kort)">
+    <rect width="600" height="400" fill="url(#vand)"/>
+    <rect y="300" width="600" height="100" fill="#bfe3ee" opacity="0.45"/>
 
-  <!-- Din oprindelige (kollisions-)kurs opad -->
-  <line x1="250" y1="300" x2="250" y2="175" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.5"/>
-  <circle cx="250" cy="155" r="12" fill="#dc2626"/>
-  <text x="250" y="160" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">!</text>
+    <line x1="410" y1="155" x2="170" y2="155" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 6" marker-end="url(#pilg)"/>
+    <use href="#baad2" filter="url(#skygge)" transform="translate(440 155) rotate(270)"/>
 
-  <!-- Din vigemanøvre: bagom agterstavnen -->
-  <path d="M 258 306 Q 340 260 352 190 Q 356 150 350 118" fill="none" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#pil)"/>
-  <use href="#baad" transform="translate(250 330)"/>
+    <line x1="250" y1="300" x2="250" y2="175" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.5"/>
+    <circle cx="250" cy="155" r="12" fill="#dc2626" filter="url(#skygge)"/>
+    <text x="250" y="160" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">!</text>
 
-  <g font-size="14" font-weight="800" text-anchor="middle">
-    <text x="475" y="128" fill="#475569">STÅR PÅ</text>
-    <text x="205" y="330" fill="#0e7490">DU VIGER</text>
+    <path d="M 258 306 Q 340 260 352 190 Q 356 150 350 118" fill="none" stroke="#f59e0b" stroke-width="3.5" marker-end="url(#pil)"/>
+    <use href="#baad" filter="url(#skygge)" transform="translate(250 330)"/>
+
+    <g font-size="14" font-weight="800" text-anchor="middle">
+      <text x="475" y="128" fill="#475569">STÅR PÅ</text>
+      <text x="205" y="330" fill="#0e7490">DU VIGER</text>
+    </g>
+    <text x="300" y="378" text-anchor="middle" fill="#0f3b4c" font-size="15" font-weight="800">Har du den anden om styrbord, viger du, drej bagom dens agterstavn</text>
   </g>
-  <text x="300" y="378" text-anchor="middle" fill="#0f3b4c" font-size="15" font-weight="800">Har du den anden om styrbord, viger du, drej bagom dens agterstavn</text>
+  <rect x="1.25" y="1.25" width="597.5" height="397.5" rx="16.75" fill="none" stroke="#bcdfe9" stroke-width="2.5"/>
 </svg>

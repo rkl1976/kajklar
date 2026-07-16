@@ -1,52 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="system-ui, sans-serif" role="img" aria-label="Genkend de fire bådtyper i profil: motorbåd (krydsningsregler gælder), sejlbåd der sejler for sejl (du viger), ro- og pagajfartøj (du viger) og fragt-/erhvervsskib (hold dig helt væk).">
-  <rect width="760" height="300" fill="#e8f6fa"/>
-  <line x1="20" y1="210" x2="740" y2="210" stroke="#bae5ef" stroke-width="4"/>
-  <g stroke="#cbd8de" stroke-width="1.5" stroke-dasharray="3 6">
-    <line x1="190" y1="40" x2="190" y2="230"/>
-    <line x1="380" y1="40" x2="380" y2="230"/>
-    <line x1="570" y1="40" x2="570" y2="230"/>
-  </g>
+  <defs>
+    <linearGradient id="vand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef8fb"/>
+      <stop offset="1" stop-color="#d3ecf3"/>
+    </linearGradient>
+    <clipPath id="kort"><rect width="760" height="300" rx="18"/></clipPath>
+    <filter id="skygge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f3b4c" flood-opacity="0.22"/>
+    </filter>
+  </defs>
 
-  <!-- MOTORBÅD -->
-  <g transform="translate(95 210)">
-    <path d="M -60 0 L 55 0 L 66 -10 L 34 -22 L -48 -22 Q -60 -22 -60 0 Z" fill="#0e7490"/>
-    <path d="M 4 -22 L 26 -22 L 20 -40 L 2 -38 Z" fill="#0b5f78"/>
-    <rect x="-42" y="-16" width="66" height="4" rx="2" fill="#e0f2f7" opacity="0.7"/>
-  </g>
-  <text x="95" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">MOTORBÅD</text>
-  <text x="95" y="268" text-anchor="middle" fill="#475569" font-size="12">krydsningsregler gælder</text>
+  <g clip-path="url(#kort)">
+    <rect width="760" height="300" fill="url(#vand)"/>
+    <rect y="210" width="760" height="90" fill="#bfe3ee" opacity="0.5"/>
+    <line x1="20" y1="210" x2="740" y2="210" stroke="#a9d4e2" stroke-width="3"/>
+    <g stroke="#cbd8de" stroke-width="1.5" stroke-dasharray="3 6">
+      <line x1="190" y1="40" x2="190" y2="228"/>
+      <line x1="380" y1="40" x2="380" y2="228"/>
+      <line x1="570" y1="40" x2="570" y2="228"/>
+    </g>
 
-  <!-- SEJLBÅD -->
-  <g transform="translate(285 210)">
-    <path d="M -52 0 L 50 0 L 44 -12 L -44 -12 Q -52 -12 -52 0 Z" fill="#475569"/>
-    <line x1="-2" y1="-12" x2="-2" y2="-100" stroke="#334155" stroke-width="3"/>
-    <path d="M -6 -96 L -6 -18 L -48 -18 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
-    <path d="M 2 -84 L 2 -18 L 34 -18 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
-  </g>
-  <text x="285" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">SEJLBÅD (for sejl)</text>
-  <text x="285" y="268" text-anchor="middle" fill="#475569" font-size="12">du viger</text>
+    <!-- MOTORBÅD -->
+    <g filter="url(#skygge)" transform="translate(95 210)">
+      <path d="M -60 0 L 55 0 L 66 -10 L 34 -22 L -48 -22 Q -60 -22 -60 0 Z" fill="#0e7490"/>
+      <path d="M 4 -22 L 26 -22 L 20 -40 L 2 -38 Z" fill="#0b5f78"/>
+      <rect x="-42" y="-16" width="66" height="4" rx="2" fill="#e0f2f7" opacity="0.7"/>
+    </g>
+    <text x="95" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">MOTORBÅD</text>
+    <text x="95" y="268" text-anchor="middle" fill="#475569" font-size="12">krydsningsregler gælder</text>
 
-  <!-- RO-/PAGAJFARTØJ -->
-  <g transform="translate(475 210)">
-    <path d="M -46 -2 Q -56 -13 -34 -13 L 34 -13 Q 56 -13 46 -2 Q 0 7 -46 -2 Z" fill="#16a34a"/>
-    <line x1="-26" y1="-40" x2="26" y2="-12" stroke="#8b5e34" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M -9 -13 L 9 -13 L 6 -28 L -6 -28 Z" fill="#0f3b4c"/>
-    <circle cx="0" cy="-34" r="7" fill="#0f3b4c"/>
-  </g>
-  <text x="475" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">RO-/PAGAJFARTØJ</text>
-  <text x="475" y="268" text-anchor="middle" fill="#475569" font-size="12">du viger</text>
+    <!-- SEJLBÅD -->
+    <g filter="url(#skygge)" transform="translate(285 210)">
+      <path d="M -52 0 L 50 0 L 44 -12 L -44 -12 Q -52 -12 -52 0 Z" fill="#475569"/>
+      <line x1="-2" y1="-12" x2="-2" y2="-100" stroke="#334155" stroke-width="3"/>
+      <path d="M -6 -96 L -6 -18 L -48 -18 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+      <path d="M 2 -84 L 2 -18 L 34 -18 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+    <text x="285" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">SEJLBÅD (for sejl)</text>
+    <text x="285" y="268" text-anchor="middle" fill="#475569" font-size="12">du viger</text>
 
-  <!-- FRAGT-/ERHVERVSSKIB -->
-  <g transform="translate(665 210)">
-    <path d="M -85 0 L 80 0 L 90 -16 L -82 -16 Q -90 -16 -85 0 Z" fill="#334155"/>
-    <rect x="-80" y="-46" width="30" height="30" fill="#475569"/>
-    <rect x="-76" y="-42" width="22" height="6" fill="#bae5ef"/>
-    <rect x="-58" y="-40" width="11" height="24" fill="#0f172a"/>
-    <rect x="-30" y="-30" width="28" height="14" fill="#d97706"/>
-    <rect x="1" y="-30" width="28" height="14" fill="#0e7490"/>
-    <rect x="32" y="-30" width="26" height="14" fill="#dc2626"/>
-    <line x1="70" y1="-16" x2="70" y2="-42" stroke="#0f172a" stroke-width="2.5"/>
+    <!-- RO-/PAGAJFARTØJ -->
+    <g filter="url(#skygge)" transform="translate(475 210)">
+      <path d="M -46 -2 Q -56 -13 -34 -13 L 34 -13 Q 56 -13 46 -2 Q 0 7 -46 -2 Z" fill="#16a34a"/>
+      <line x1="-26" y1="-40" x2="26" y2="-12" stroke="#8b5e34" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M -9 -13 L 9 -13 L 6 -28 L -6 -28 Z" fill="#0f3b4c"/>
+      <circle cx="0" cy="-34" r="7" fill="#0f3b4c"/>
+    </g>
+    <text x="475" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">RO-/PAGAJFARTØJ</text>
+    <text x="475" y="268" text-anchor="middle" fill="#475569" font-size="12">du viger</text>
+
+    <!-- FRAGT-/ERHVERVSSKIB -->
+    <g filter="url(#skygge)" transform="translate(665 210)">
+      <path d="M -85 0 L 80 0 L 90 -16 L -82 -16 Q -90 -16 -85 0 Z" fill="#334155"/>
+      <rect x="-80" y="-46" width="30" height="30" fill="#475569"/>
+      <rect x="-76" y="-42" width="22" height="6" fill="#bae5ef"/>
+      <rect x="-58" y="-40" width="11" height="24" fill="#0f172a"/>
+      <rect x="-30" y="-30" width="28" height="14" fill="#d97706"/>
+      <rect x="1" y="-30" width="28" height="14" fill="#0e7490"/>
+      <rect x="32" y="-30" width="26" height="14" fill="#dc2626"/>
+      <line x1="70" y1="-16" x2="70" y2="-42" stroke="#0f172a" stroke-width="2.5"/>
+    </g>
+    <text x="665" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">FRAGT-/ERHVERVSSKIB</text>
+    <text x="665" y="268" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="700">hold dig helt væk</text>
   </g>
-  <text x="665" y="248" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="800">FRAGT-/ERHVERVSSKIB</text>
-  <text x="665" y="268" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="700">hold dig helt væk</text>
+  <rect x="1.25" y="1.25" width="757.5" height="297.5" rx="16.75" fill="none" stroke="#bcdfe9" stroke-width="2.5"/>
 </svg>

@@ -1,41 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" font-family="system-ui, sans-serif" role="img" aria-label="Sideafmærkning i IALA system A: den røde stumpe bagbordsbøje med rød cylinder-topfigur holdes om bagbord (venstre), og den grønne spidse styrbordsbøje med grøn kegle-topfigur holdes om styrbord (højre), når du sejler for indgående">
-  <rect width="600" height="420" fill="#e8f6fa"/>
-  <rect y="300" width="600" height="120" fill="#bae5ef" opacity="0.55"/>
-
-  <!-- Retning for indgående -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" font-family="system-ui, sans-serif" role="img" aria-label="Sideafmærkning i IALA system A: den røde stumpe bagbordsbøje holdes om bagbord (venstre) og den grønne spidse styrbordsbøje om styrbord (højre), når du sejler for indgående">
   <defs>
+    <linearGradient id="vand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef8fb"/>
+      <stop offset="1" stop-color="#d3ecf3"/>
+    </linearGradient>
+    <clipPath id="kort"><rect width="600" height="420" rx="18"/></clipPath>
+    <filter id="skygge" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0f3b4c" flood-opacity="0.22"/>
+    </filter>
     <marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#f59e0b"/>
     </marker>
   </defs>
 
-  <!-- Rød bagbordsbøje (venstre = bagbord når du sejler op ad skærmen) -->
-  <g>
-    <ellipse cx="130" cy="300" rx="44" ry="11" fill="#0e7490" opacity="0.15"/>
-    <line x1="130" y1="300" x2="130" y2="150" stroke="#334155" stroke-width="3"/>
-    <rect x="102" y="212" width="56" height="90" rx="12" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
-    <rect x="114" y="150" width="32" height="30" rx="4" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
-  </g>
-  <text x="130" y="335" text-anchor="middle" fill="#0f3b4c" font-size="16" font-weight="800">BAGBORD</text>
-  <text x="130" y="356" text-anchor="middle" fill="#475569" font-size="13">rød · stump/cylinder</text>
-  <text x="130" y="374" text-anchor="middle" fill="#475569" font-size="13">hold den om bagbord</text>
+  <g clip-path="url(#kort)">
+    <rect width="600" height="420" fill="url(#vand)"/>
+    <rect y="300" width="600" height="120" fill="#bfe3ee" opacity="0.5"/>
+    <g stroke="#ffffff" stroke-width="2" opacity="0.45" fill="none" stroke-linecap="round">
+      <path d="M 40 116 q 22 -7 44 0 t 44 0"/>
+      <path d="M 452 84 q 22 -7 44 0 t 44 0"/>
+    </g>
 
-  <!-- Grøn styrbordsbøje (højre = styrbord) -->
-  <g>
-    <ellipse cx="470" cy="300" rx="44" ry="11" fill="#0e7490" opacity="0.15"/>
-    <line x1="470" y1="300" x2="470" y2="150" stroke="#334155" stroke-width="3"/>
-    <path d="M 442 302 L 470 214 L 498 302 Z" fill="#16a34a" stroke="#166534" stroke-width="2"/>
-    <path d="M 470 148 L 453 180 L 487 180 Z" fill="#16a34a" stroke="#166534" stroke-width="2"/>
-  </g>
-  <text x="470" y="335" text-anchor="middle" fill="#0f3b4c" font-size="16" font-weight="800">STYRBORD</text>
-  <text x="470" y="356" text-anchor="middle" fill="#475569" font-size="13">grøn · spids/kegle</text>
-  <text x="470" y="374" text-anchor="middle" fill="#475569" font-size="13">hold den om styrbord</text>
+    <!-- Rød bagbordsbøje (venstre) -->
+    <g filter="url(#skygge)">
+      <line x1="130" y1="300" x2="130" y2="150" stroke="#334155" stroke-width="3"/>
+      <rect x="102" y="212" width="56" height="90" rx="12" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
+      <rect x="114" y="150" width="32" height="30" rx="4" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
+    </g>
+    <text x="130" y="335" text-anchor="middle" fill="#0f3b4c" font-size="16" font-weight="800">BAGBORD</text>
+    <text x="130" y="356" text-anchor="middle" fill="#475569" font-size="13">rød · stump/cylinder</text>
+    <text x="130" y="374" text-anchor="middle" fill="#475569" font-size="13">hold den om bagbord</text>
 
-  <!-- Båden sejler for indgående (op ad skærmen) mellem bøjerne -->
-  <line x1="300" y1="300" x2="300" y2="150" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#pil)"/>
-  <g transform="translate(300 340)">
-    <path d="M -20 24 L 20 24 L 20 -6 Q 0 -32 -20 -6 Z" fill="#0e7490"/>
-    <circle cx="0" cy="6" r="5" fill="#e0f2f7"/>
+    <!-- Grøn styrbordsbøje (højre) -->
+    <g filter="url(#skygge)">
+      <line x1="470" y1="300" x2="470" y2="150" stroke="#334155" stroke-width="3"/>
+      <path d="M 442 302 L 470 214 L 498 302 Z" fill="#16a34a" stroke="#166534" stroke-width="2"/>
+      <path d="M 470 148 L 453 180 L 487 180 Z" fill="#16a34a" stroke="#166534" stroke-width="2"/>
+    </g>
+    <text x="470" y="335" text-anchor="middle" fill="#0f3b4c" font-size="16" font-weight="800">STYRBORD</text>
+    <text x="470" y="356" text-anchor="middle" fill="#475569" font-size="13">grøn · spids/kegle</text>
+    <text x="470" y="374" text-anchor="middle" fill="#475569" font-size="13">hold den om styrbord</text>
+
+    <!-- Båden for indgående -->
+    <line x1="300" y1="300" x2="300" y2="150" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#pil)"/>
+    <g filter="url(#skygge)" transform="translate(300 340)">
+      <path d="M -20 24 L 20 24 L 20 -6 Q 0 -32 -20 -6 Z" fill="#0e7490"/>
+      <circle cx="0" cy="6" r="5" fill="#e0f2f7"/>
+    </g>
+    <text x="300" y="404" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="700">Retning for indgående</text>
   </g>
-  <text x="300" y="404" text-anchor="middle" fill="#0f3b4c" font-size="14" font-weight="700">Retning for indgående</text>
+  <rect x="1.25" y="1.25" width="597.5" height="417.5" rx="16.75" fill="none" stroke="#bcdfe9" stroke-width="2.5"/>
 </svg>
