@@ -15,7 +15,7 @@ Danmark bruger IALA system A, ligesom stort set hele Europa. Grundprincippet er:
 - **Grøn bøje/båke** (ofte spids eller kegleformet) skal du have på din **styrbord side** (højre side), når du følger retningen for indgående.
 - **Rød bøje/båke** (ofte rund eller cylinderformet) skal du have på din **bagbord side** (venstre side) på samme kurs.
 
-![Diagram: sideafmærkning i IALA system A, den røde stumpe bagbordsbøje holdes om bagbord (venstre) og den grønne spidse styrbordsbøje om styrbord (højre), når du sejler for indgående](../../../assets/diagrammer/afmaerkning-side.svg)
+![Foto: sideafmærkning i IALA system A, den røde stumpe bagbordsbøje holdes om bagbord (venstre) og den grønne spidse styrbordsbøje om styrbord (højre), når du sejler for indgående](../../../assets/diagrammer/sideafmaerkning-foto.svg)
 
 Sejler du den modsatte vej, vender det naturligvis om, rød om styrbord, grøn om bagbord. Derfor er det afgørende at kende retningen for indgående i det farvand, du sejler i. Retningen er markeret på søkortet, typisk med en pil-symbol, og den følger ikke nødvendigvis kompasretning eller "fra Vesterhavet mod Kattegat", den er fastsat lokalt for hver sejlrende og fremgår altid af søkortet. I Limfjorden skifter afmærkningens hovedretning undervejs, blandt andet omkring Aalborg, så tjek altid dit søkort for den aktuelle strækning i stedet for at regne med en fast tommelfingerregel hele vejen fra Thyborøn til Hals.
 
@@ -32,7 +32,13 @@ Hvor sideafmærkning fortæller "hold dig til den ene side", fortæller kardinal
 - **Øst-mærke** (topfigurer der peger væk fra hinanden): faren er vest for mærket, sejl øst om.
 - **Vest-mærke** (topfigurer der peger mod hinanden): faren er øst for mærket, sejl vest om.
 
-![Diagram: de fire kardinalafmærkninger, Nord (keglerne peger op, sort over gul), Syd (keglerne peger ned, gul over sort), Øst (keglerne peger væk fra hinanden, sort-gul-sort) og Vest (keglerne peger mod hinanden, gul-sort-gul)](../../../assets/diagrammer/afmaerkning-kardinaler.svg)
+![Foto: nord-kardinal, sort over gul med to sorte kegler der peger op. Faren er syd for mærket, sejl nord om](../../../assets/diagrammer/kardinal-nord-foto.svg)
+
+![Foto: syd-kardinal, gul over sort med to sorte kegler der peger ned. Faren er nord for mærket, sejl syd om](../../../assets/diagrammer/kardinal-syd-foto.svg)
+
+![Foto: øst-kardinal, sort-gul-sort med to sorte kegler basis mod basis (en diamant). Faren er vest for mærket, sejl øst om](../../../assets/diagrammer/kardinal-oest-foto.svg)
+
+![Foto: vest-kardinal, gul-sort-gul med to sorte kegler spids mod spids (et timeglas). Faren er øst for mærket, sejl vest om](../../../assets/diagrammer/kardinal-vest-foto.svg)
 
 Kardinalmærker er gule og sorte og bruges typisk til at markere fx et lavvandet område, en vraggrund eller en kant af en sejlrende, hvor faren ikke ligger midt i, men til én bestemt side.
 
