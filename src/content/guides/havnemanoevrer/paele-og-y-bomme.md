@@ -30,7 +30,7 @@ De fleste gæstehavne markerer ledige og optagede pladser med farvede skilte ell
 
 Når alle trosser er på plads, ligger båden fast mellem pælene og kajen, agtertrosser til begge pæle og fortrosser til kajen:
 
-![Diagram: færdig fortøjning mellem pæle, agtertrosser til begge pæle, fortrosser til kajen, og boven må aldrig nå helt ind](../../../assets/diagrammer/paele-fortoejet.svg)
+![Dronefoto: færdig fortøjning mellem pæle set oppefra, agtertrosser til begge pæle, fortrosser til kajen, og boven må aldrig nå helt ind](../../../assets/diagrammer/paele-fortoejet-foto.svg)
 
 Mange vælger at **krydse agtertrosserne**, styrbord klampe til bagbord pæl og omvendt. Krydset gør linerne længere, så de arbejder bedre, når vandstanden ændrer sig, og det holder samtidig agterenden centreret i båsen. Sørg blot for, at trosserne ikke gnaver mod hinanden dér, hvor de krydser.
 
