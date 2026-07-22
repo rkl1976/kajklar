@@ -6,7 +6,10 @@ import { KATEGORIER, type Kategori } from '../lib/kategorier';
 import { guideUrl } from '../lib/guides';
 import { withBase } from '../lib/url';
 import { KATEGORI_FOTOS } from '../lib/kategoriFotos';
+import VindBoks from '../components/VindBoks.astro';
 import heroBillede from '../assets/fotos/hero-badebro.jpg';
+
+const aalborg = (await getCollection('havne')).find((havn) => havn.id === 'aalborg');
 
 const guides = await getCollection('guides');
 const fremhaevet = guides.find((g) => g.id === 'havnemanoevrer/laegge-til-i-sidevind')
@@ -51,6 +54,25 @@ const omraader = (Object.entries(KATEGORIER) as [Kategori, (typeof KATEGORIER)[K
       </div>
     </div>
   </section>
+
+  {aalborg && (
+    <section class="mx-auto max-w-6xl px-4 pt-14" aria-label="Vejret i Aalborg lige nu">
+      <div class="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
+        <div>
+          <h2 class="font-display text-2xl font-black sm:text-3xl">Skal du ud at sejle i dag?</h2>
+          <p class="mt-3 max-w-prose text-slate-600 dark:text-slate-400">
+            Tjek vinden ved Aalborg, før du planlægger dagens tur på fjorden. Prognosen kommer fra
+            DMI's HARMONIE-model og viser både vindstød og de kommende timer, så du ved, hvad der
+            venter dig ved kajen.
+          </p>
+          <a href={withBase('/vejr/')} class="mt-4 inline-block text-sm font-semibold text-fjord-600 hover:underline dark:text-fjord-200">
+            Se den fulde udsigt og alle havne →
+          </a>
+        </div>
+        <VindBoks lat={aalborg.data.position.lat} lng={aalborg.data.position.lng} titel="Aalborg lige nu" />
+      </div>
+    </section>
+  )}
 
   <section class="mx-auto max-w-6xl px-4 py-14" aria-label="Indholdsområder">
     <h2 class="font-display text-2xl font-black sm:text-3xl">Tre veje til at blive KajKlar</h2>

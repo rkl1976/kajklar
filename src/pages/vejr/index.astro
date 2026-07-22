@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+import { PIL_PATH } from '../../lib/vejr';
+
+const havne = await getCollection('havne');
+// Aalborg er den vigtigste havn og står først; resten sorteres vest -> øst.
+const sorteret = [
+  ...havne.filter((havn) => havn.id === 'aalborg'),
+  ...havne.filter((havn) => havn.id !== 'aalborg').sort((a, b) => a.data.position.lng - b.data.position.lng),
+];
+---
+<BaseLayout title="Vind og vejr i havnene" description="Live vind og vejr for havnene i Limfjorden: aktuel vind, vindstød og prognoser fra DMI's HARMONIE-model.">
+  <h1 class="font-display text-4xl font-black">Vind og vejr i havnene</h1>
+  <p class="mt-3 max-w-prose text-slate-600 dark:text-slate-400">
+    Aktuel vind for havnene på ruten, fra Thyborøn i vest til Aalborg i øst. Klik på en havn
+    for at se den fulde udsigt med time-for-time-prognose og de næste 7 døgn.
+  </p>
+
+  <p data-vejr-fejl hidden class="mt-6 rounded-xl bg-fjord-100 p-4 text-sm text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+    Vejrdata kunne ikke hentes lige nu. Prøv at genindlæse siden.
+  </p>
+
+  <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {sorteret.map((havn) => (
+      <a href={withBase(`/vejr/${havn.id}/`)} data-vejrkort data-lat={havn.data.position.lat} data-lng={havn.data.position.lng}
+        class="group rounded-xl bg-fjord-100 p-4 transition hover:-translate-y-0.5 hover:shadow-md dark:bg-slate-800">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="font-bold group-hover:underline">{havn.data.navn}</h2>
+          <span data-vk-badge hidden class="rounded-full px-2.5 py-0.5 text-xs font-semibold"></span>
+        </div>
+
+        <div data-vk-skelet class="mt-3 animate-pulse space-y-2" aria-hidden="true">
+          <div class="h-7 w-32 rounded bg-fjord-200/70 dark:bg-slate-700"></div>
+          <div class="h-4 w-44 rounded bg-fjord-200/70 dark:bg-slate-700"></div>
+        </div>
+
+        <div data-vk-indhold hidden>
+          <p class="mt-2 flex items-center gap-2 leading-tight">
+            <svg data-vk-pil class="h-6 w-6 shrink-0 text-fjord-600 transition-transform dark:text-fjord-200"
+              viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d={PIL_PATH} />
+            </svg>
+            <span>
+              <span data-vk-vind class="font-display text-2xl font-black">–</span>
+              <span class="text-sm font-semibold">m/s</span>
+              <span data-vk-retning class="ml-1 text-sm font-semibold"></span>
+            </span>
+          </p>
+          <p class="mt-1.5 text-sm text-slate-600 dark:text-slate-400">
+            Vindstød <span data-vk-stoed class="font-semibold text-fjord-900 dark:text-slate-100"></span> m/s
+            · <span data-vk-vejr></span> <span data-vk-temp></span>°
+          </p>
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <p class="mt-6 text-xs text-slate-600 dark:text-slate-400">
+    Prognose fra DMI's HARMONIE-model via
+    <a href="https://open-meteo.com/" rel="noopener" class="underline hover:text-fjord-600 dark:hover:text-fjord-200">Open-Meteo</a>.
+    Tjek altid en aktuel udsigt, før du sejler.
+  </p>
+</BaseLayout>
+
+<script>
+  import { BADGE_FARVER, betegnelse, fmt, forecastUrl, niveau, pilRotation, retningTekst, vejrSymbol } from '../../lib/vejr';
+
+  const kort = [...document.querySelectorAll<HTMLElement>('[data-vejrkort]')];
+
+  function udfyld(el: HTMLElement, aktuel: any) {
+    const q = (sel: string) => el.querySelector<HTMLElement>(sel)!;
+    q('[data-vk-vind]').textContent = fmt.format(aktuel.wind_speed_10m);
+    q('[data-vk-retning]').textContent = `fra ${retningTekst(aktuel.wind_direction_10m)}`;
+    q('[data-vk-stoed]').textContent = fmt.format(aktuel.wind_gusts_10m);
+    q('[data-vk-temp]').textContent = fmt.format(aktuel.temperature_2m);
+    q('[data-vk-vejr]').textContent = vejrSymbol(aktuel.weather_code).ikon;
+    q('[data-vk-pil]').style.transform = pilRotation(aktuel.wind_direction_10m);
+    const badge = q('[data-vk-badge]');
+    badge.textContent = betegnelse(aktuel.wind_speed_10m);
+    badge.className += ` ${BADGE_FARVER[niveau(aktuel.wind_speed_10m)]}`;
+    badge.hidden = false;
+    q('[data-vk-indhold]').hidden = false;
+  }
+
+  async function hentAlle() {
+    // Ét multi-location-kald for alle havne; svaret er et array i samme rækkefølge.
+    const url = forecastUrl({
+      latitude: kort.map((el) => el.dataset.lat!).join(','),
+      longitude: kort.map((el) => el.dataset.lng!).join(','),
+      current: 'temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m',
+    });
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10_000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const liste = Array.isArray(data) ? data : [data];
+      kort.forEach((el, i) => udfyld(el, liste[i].current));
+    } catch {
+      document.querySelectorAll<HTMLElement>('[data-vejr-fejl]').forEach((el) => (el.hidden = false));
+    } finally {
+      kort.forEach((el) => el.querySelector('[data-vk-skelet]')?.remove());
+    }
+  }
+
+  if (kort.length > 0) hentAlle();
+</script>

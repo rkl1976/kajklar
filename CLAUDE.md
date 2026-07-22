@@ -41,7 +41,13 @@ renderer collections.
 - `/[kategori]/[slug]/`, enkelt guide. Slug er sidste del af guide-`id`
   (se `guideSlug`/`guideUrl` i `src/lib/guides.ts`, brug altid disse helpers
   til at bygge guide-URL'er). `regler`-guides får automatisk en ansvarsfraskrivelse.
-- `/havne/` og `/havne/[id]/`, havneoversigt og -detaljer.
+- `/havne/` og `/havne/[id]/`, havneoversigt og -detaljer (p.t. deaktiveret:
+  siderne ligger i `src/pages/_havne/`, underscore udelukker dem fra routing).
+- `/vejr/` og `/vejr/[id]/`, vejroversigt for alle havne og stor vejrside pr.
+  havn. Data hentes klient-side fra Open-Meteo (DMI's HARMONIE-model, ingen
+  API-nøgle, kildeangivelse påkrævet). Delt logik i `src/lib/vejr.ts`;
+  `src/components/VindBoks.astro` er den kompakte boks (forsiden + havnesider).
+  Aalborg er den redaktionelt vigtigste havn og står først/på forsiden.
 
 **Kategori-metadata** ligger centralt i `src/lib/kategorier.ts` (titel, emoji,
 beskrivelse) og `src/lib/kategoriFotos.ts` (herofotos). En ny kategori kræver

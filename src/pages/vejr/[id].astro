@@ -1,0 +1,196 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+import { PIL_PATH } from '../../lib/vejr';
+
+export async function getStaticPaths() {
+  const havne = await getCollection('havne');
+  return havne.map((havn) => ({ params: { id: havn.id }, props: { havn } }));
+}
+
+const { havn } = Astro.props;
+const { navn, position } = havn.data;
+---
+<BaseLayout title={`Vejret i ${navn}`} description={`Vind, vejr og udsigt for ${navn}: aktuel vind og vindstød, time-for-time-prognose og 7 døgn frem.`}>
+  <a href={withBase('/vejr/')} class="text-sm text-fjord-600 hover:underline dark:text-fjord-200">← Alle havne</a>
+  <h1 class="mt-2 font-display text-4xl font-black">Vejret i {navn}</h1>
+  <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">{position.lat.toFixed(3)}° N, {position.lng.toFixed(3)}° Ø</p>
+
+  <div data-vejrside data-lat={position.lat} data-lng={position.lng}>
+    <div data-vd-skelet class="mt-6 animate-pulse space-y-4" aria-hidden="true">
+      <div class="h-40 rounded-xl bg-fjord-100 dark:bg-slate-800"></div>
+      <div class="h-32 rounded-xl bg-fjord-100 dark:bg-slate-800"></div>
+      <div class="h-64 rounded-xl bg-fjord-100 dark:bg-slate-800"></div>
+    </div>
+
+    <p data-vd-fejl hidden class="mt-6 rounded-xl bg-fjord-100 p-4 text-sm text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+      Vejrdata kunne ikke hentes lige nu. Prøv at genindlæse siden.
+    </p>
+
+    <div data-vd-indhold hidden>
+      <section class="mt-6 rounded-xl bg-fjord-100 p-5 dark:bg-slate-800" aria-label="Vejret lige nu">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="font-bold">Lige nu</h2>
+          <span data-vd-badge class="rounded-full px-2.5 py-0.5 text-xs font-semibold"></span>
+        </div>
+        <div class="mt-4 grid gap-6 sm:grid-cols-2">
+          <div class="flex items-center gap-4">
+            <svg data-vd-pil class="h-14 w-14 shrink-0 text-fjord-600 transition-transform dark:text-fjord-200"
+              viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d={PIL_PATH} />
+            </svg>
+            <div>
+              <p class="leading-tight">
+                <span data-vd-vind class="font-display text-5xl font-black">–</span>
+                <span class="font-semibold">m/s</span>
+                <span data-vd-retning class="ml-1 font-semibold"></span>
+              </p>
+              <p class="mt-1.5 text-sm text-slate-600 dark:text-slate-400">
+                Vindstød op til <span data-vd-stoed class="font-semibold text-fjord-900 dark:text-slate-100"></span> m/s
+              </p>
+            </div>
+          </div>
+          <dl class="space-y-1.5 text-sm">
+            <div class="flex items-baseline gap-2">
+              <dt class="font-semibold">Vejr:</dt>
+              <dd><span data-vd-ikon></span> <span data-vd-vejrtekst></span></dd>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <dt class="font-semibold">Temperatur:</dt>
+              <dd><span data-vd-temp></span>° <span class="text-slate-600 dark:text-slate-400">(føles som <span data-vd-foelt></span>°)</span></dd>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <dt class="font-semibold">Skydække:</dt>
+              <dd><span data-vd-skyer></span> %</dd>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <dt class="font-semibold">Lufttryk:</dt>
+              <dd><span data-vd-tryk></span> hPa</dd>
+            </div>
+            <div class="flex items-baseline gap-2">
+              <dt class="font-semibold">Sol:</dt>
+              <dd>op <span data-vd-solop></span> · ned <span data-vd-solned></span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="mt-6" aria-label="Time for time">
+        <h2 class="text-xs font-semibold tracking-wide text-slate-600 uppercase dark:text-slate-400">
+          Time for time, næste 2 døgn · m/s (vindstød)
+        </h2>
+        <ol data-vd-timer class="mt-2 flex gap-2 overflow-x-auto pb-1"></ol>
+      </section>
+
+      <section class="mt-6" aria-label="Udsigt for de næste 7 døgn">
+        <h2 class="text-xs font-semibold tracking-wide text-slate-600 uppercase dark:text-slate-400">
+          De næste 7 døgn
+        </h2>
+        <ol data-vd-dage class="mt-2 divide-y divide-fjord-100 rounded-xl border border-fjord-100 dark:divide-slate-700 dark:border-slate-700"></ol>
+      </section>
+
+      <p class="mt-5 text-xs text-slate-600 dark:text-slate-400">
+        Prognose fra DMI's HARMONIE-model via
+        <a href="https://open-meteo.com/" rel="noopener" class="underline hover:text-fjord-600 dark:hover:text-fjord-200">Open-Meteo</a>
+        · opdateret kl. <span data-vd-tid></span>. Tjek altid en aktuel udsigt, før du sejler.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { BADGE_FARVER, PIL_PATH, betegnelse, fmt, forecastUrl, niveau, pilRotation, retningTekst, vejrSymbol } from '../../lib/vejr';
+
+  const ugedagFmt = new Intl.DateTimeFormat('da-DK', { weekday: 'short' });
+  const datoFmt = new Intl.DateTimeFormat('da-DK', { day: 'numeric', month: 'numeric' });
+  const ugedag = (isoDato: string) => ugedagFmt.format(new Date(`${isoDato}T12:00`));
+
+  function pilSvg(grader: number, klasser: string): string {
+    return `<svg class="${klasser}" viewBox="0 0 24 24" fill="currentColor" style="transform: ${pilRotation(grader)}" aria-hidden="true">
+      <path d="${PIL_PATH}" /></svg><span class="sr-only">fra ${retningTekst(grader)}</span>`;
+  }
+
+  function timeKort(h: any, i: number): string {
+    const kl = h.time[i].slice(11, 16);
+    const label = kl === '00:00' ? ugedag(h.time[i].slice(0, 10)) : kl.slice(0, 2);
+    return `<li class="flex min-w-14 flex-col items-center gap-1 rounded-lg bg-fjord-100 px-2 py-2 dark:bg-slate-800">
+      <span class="text-xs font-semibold ${kl === '00:00' ? 'text-rav-600 dark:text-rav-500' : 'text-slate-600 dark:text-slate-400'}">${label}</span>
+      <span class="text-base" title="${vejrSymbol(h.weather_code[i]).tekst}">${vejrSymbol(h.weather_code[i]).ikon}</span>
+      ${pilSvg(h.wind_direction_10m[i], 'h-4 w-4 text-fjord-600 dark:text-fjord-200')}
+      <span class="text-sm font-bold">${Math.round(h.wind_speed_10m[i])}<span class="font-normal text-slate-600 dark:text-slate-400"> (${Math.round(h.wind_gusts_10m[i])})</span></span>
+      <span class="text-xs">${Math.round(h.temperature_2m[i])}°</span>
+      <span class="text-xs text-fjord-600 dark:text-fjord-200">${h.precipitation_probability[i] ?? 0} %</span>
+    </li>`;
+  }
+
+  function dagRaekke(d: any, i: number): string {
+    const symbol = vejrSymbol(d.weather_code[i]);
+    return `<li class="grid grid-cols-[3.2rem_1.8rem_1fr_auto] items-center gap-x-3 px-4 py-2.5 text-sm">
+      <span class="font-semibold">${i === 0 ? 'i dag' : `${ugedag(d.time[i])} ${datoFmt.format(new Date(`${d.time[i]}T12:00`))}`}</span>
+      <span class="text-base" title="${symbol.tekst}">${symbol.ikon}</span>
+      <span class="flex items-center gap-1.5">
+        ${pilSvg(d.wind_direction_10m_dominant[i], 'h-4 w-4 shrink-0 text-fjord-600 dark:text-fjord-200')}
+        <span><b>${Math.round(d.wind_speed_10m_max[i])}</b> <span class="text-slate-600 dark:text-slate-400">(${Math.round(d.wind_gusts_10m_max[i])})</span> m/s fra ${retningTekst(d.wind_direction_10m_dominant[i])}</span>
+      </span>
+      <span class="text-right text-slate-600 dark:text-slate-400">${Math.round(d.temperature_2m_min[i])}–${Math.round(d.temperature_2m_max[i])}° · ${fmt.format(d.precipitation_sum[i])} mm</span>
+    </li>`;
+  }
+
+  async function initVejrside(el: HTMLElement) {
+    const q = (sel: string) => el.querySelector<HTMLElement>(sel)!;
+    const url = forecastUrl({
+      latitude: el.dataset.lat!,
+      longitude: el.dataset.lng!,
+      current: 'temperature_2m,apparent_temperature,weather_code,cloud_cover,pressure_msl,wind_speed_10m,wind_direction_10m,wind_gusts_10m',
+      hourly: 'wind_speed_10m,wind_gusts_10m,wind_direction_10m,temperature_2m,precipitation_probability,weather_code',
+      daily: 'weather_code,temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,precipitation_sum,sunrise,sunset',
+      forecast_days: '7',
+    });
+
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(10_000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const { current, hourly, daily } = await res.json();
+
+      q('[data-vd-vind]').textContent = fmt.format(current.wind_speed_10m);
+      q('[data-vd-retning]').textContent = `fra ${retningTekst(current.wind_direction_10m)}`;
+      q('[data-vd-stoed]').textContent = fmt.format(current.wind_gusts_10m);
+      q('[data-vd-pil]').style.transform = pilRotation(current.wind_direction_10m);
+      q('[data-vd-tid]').textContent = current.time.slice(11, 16);
+
+      const symbol = vejrSymbol(current.weather_code);
+      q('[data-vd-ikon]').textContent = symbol.ikon;
+      q('[data-vd-vejrtekst]').textContent = symbol.tekst;
+      q('[data-vd-temp]').textContent = fmt.format(current.temperature_2m);
+      q('[data-vd-foelt]').textContent = fmt.format(current.apparent_temperature);
+      q('[data-vd-skyer]').textContent = String(Math.round(current.cloud_cover));
+      q('[data-vd-tryk]').textContent = String(Math.round(current.pressure_msl));
+      q('[data-vd-solop]').textContent = daily.sunrise[0].slice(11, 16);
+      q('[data-vd-solned]').textContent = daily.sunset[0].slice(11, 16);
+
+      const badge = q('[data-vd-badge]');
+      badge.textContent = betegnelse(current.wind_speed_10m);
+      badge.className += ` ${BADGE_FARVER[niveau(current.wind_speed_10m)]}`;
+
+      const fraIndex = hourly.time.findIndex((t: string) => t > current.time);
+      q('[data-vd-timer]').innerHTML = hourly.time
+        .slice(fraIndex, fraIndex + 48)
+        .map((_: string, i: number) => timeKort(hourly, fraIndex + i))
+        .join('');
+
+      q('[data-vd-dage]').innerHTML = daily.time
+        .map((_: string, i: number) => dagRaekke(daily, i))
+        .join('');
+
+      q('[data-vd-indhold]').hidden = false;
+    } catch {
+      q('[data-vd-fejl]').hidden = false;
+    } finally {
+      q('[data-vd-skelet]').remove();
+    }
+  }
+
+  const side = document.querySelector<HTMLElement>('[data-vejrside]');
+  if (side) initVejrside(side);
+</script>
